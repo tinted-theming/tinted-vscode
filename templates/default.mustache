@@ -102,7 +102,7 @@
         "editor.inactiveSelectionBackground": "#{{base02-hex}}", //2
         "editor.wordHighlightBackground": "#{{base02-hex}}", //2
         "editor.wordHighlightStrongBackground": "#{{base03-hex}}", //3
-        "editor.findMatchBackground": "#{{base0A-hex}}", //A
+        "editor.findMatchBackground": "#{{base0A-hex}}6f", //A
         "editor.findMatchHighlightBackground": "#{{base09-hex}}6f", //9
         "editor.findRangeHighlightBackground": "#f0f",
         "editor.hoverHighlightBackground": "#{{base02-hex}}", //2
@@ -243,7 +243,7 @@
         "descriptionForeground": "#{{base03-hex}}", //3
         "textBlockQuote.background": "#{{base01-hex}}", //1
         "textBlockQuote.border": "#{{base0D-hex}}", //D
-        "textCodeBlock.background": "#0f0",
+        "textCodeBlock.background": "#{{base00-hex}}", //0
         "textLink.activeForeground": "#{{base0C-hex}}", //C
         "textLink.foreground": "#{{base0D-hex}}", //D
         "textPreformat.foreground": "#{{base0D-hex}}", //D
@@ -317,11 +317,21 @@
             }
         },
         {
+            "name": "Keyword Control",
+            "scope": [
+                "keyword.control.flow"
+            ],
+            "settings": {
+                "foreground": "#{{base0E-hex}}" //E
+            }
+        },
+        {
             "name": "Operator, Misc",
             "scope": [
                 "keyword.control",
                 "constant.other.color",
                 "punctuation",
+                "punctuation.section.class.end",
                 "meta.tag",
                 "punctuation.definition.tag",
                 "punctuation.separator.inheritance.php",
@@ -879,8 +889,7 @@
             "name": "Markdown - Fenced Bode Block Variable",
             "scope": [
                 "markup.raw.block.fenced.markdown",
-                "variable.language.fenced.markdown",
-                "punctuation.section.class.end"
+                "variable.language.fenced.markdown"
             ],
             "settings": {
                 "foreground": "#f0f"
