@@ -121,7 +121,7 @@
         "minimap.selectionHighlight": "#{{base02-hex}}6f", //2
 
         // Editor groups and tabs
-        "editorGroup.background": "#{{base00-hex}}", //0
+        "editorGroup.emptyBackground": "#{{base00-hex}}", //0
         // "editorGroup.border": "#f00",
         "editorGroup.dropBackground": "#{{base02-hex}}6f", //2
         "editorGroupHeader.noTabsBackground": "#{{base01-hex}}", //1
@@ -311,8 +311,8 @@
         "statusBarItem.activeBackground": "#{{base03-hex}}", //3
         "statusBarItem.hoverBackground": "#{{base02-hex}}", //2
         "statusBarItem.prominentForeground": "#{{base07-hex}}", //7
-        "statusBarItem.prominentBackground": "#f0f",
-        "statusBarItem.prominentHoverBackground": "#f00",
+        "statusBarItem.prominentBackground": "#{{base0E-hex}}", //E
+        "statusBarItem.prominentHoverBackground": "#{{base08-hex}}", //8
         "statusBarItem.remoteBackground": "#{{base0B-hex}}", //B
         "statusBarItem.remoteForeground": "#{{base07-hex}}", //7
 
@@ -349,17 +349,17 @@
         "notificationsInfoIcon.foreground": "#{{base0D-hex}}", //D
 
         // Below is no longer supported as of 1.21
-        "notification.background": "#{{base02-hex}}", //2
-        "notification.foreground": "#{{base05-hex}}", //5
-        "notification.buttonBackground": "#{{base0D-hex}}", //D
-        "notification.buttonHoverBackground": "#{{base02-hex}}", //2
-        "notification.buttonForeground": "#{{base07-hex}}", //7
-        "notification.infoBackground": "#{{base0C-hex}}", //C
-        "notification.infoForeground": "#{{base07-hex}}", //7
-        "notification.warningBackground": "#{{base0A-hex}}", //A
-        "notification.warningForeground": "#{{base07-hex}}", //7
-        "notification.errorBackground": "#{{base08-hex}}", //8
-        "notification.errorForeground": "#{{base07-hex}}", //7
+        // "notification.background": "#{{base02-hex}}", //2
+        // "notification.foreground": "#{{base05-hex}}", //5
+        // "notification.buttonBackground": "#{{base0D-hex}}", //D
+        // "notification.buttonHoverBackground": "#{{base02-hex}}", //2
+        // "notification.buttonForeground": "#{{base07-hex}}", //7
+        // "notification.infoBackground": "#{{base0C-hex}}", //C
+        // "notification.infoForeground": "#{{base07-hex}}", //7
+        // "notification.warningBackground": "#{{base0A-hex}}", //A
+        // "notification.warningForeground": "#{{base07-hex}}", //7
+        // "notification.errorBackground": "#{{base08-hex}}", //8
+        // "notification.errorForeground": "#{{base07-hex}}", //7
         // Above is no longer supported as of 1.21
 
         // Extensions
@@ -421,6 +421,8 @@
         // Settings editor colors
         "settings.headerForeground": "#{{base05-hex}}", //5
         "settings.modifiedItemIndicator": "#{{base0D-hex}}", //D
+        // "settings.modifiedItemForeground": "#{{base0B-hex}}", //B
+        // "settings.inactiveSelectedItemBorder": "",
         "settings.dropdownBackground": "#{{base01-hex}}", //1
         "settings.dropdownForeground": "#{{base05-hex}}", //5
         // "settings.dropdownBorder": "",
@@ -486,12 +488,12 @@
         "symbolIcon.variableForeground": "#{{base08-hex}}" //8
     },
     "tokenColors": [
-        {
-            "settings": {
-                "foreground": "#eeffffff",
-                "background": "#263238ff"
-            }
-        },
+        // {
+        //     "settings": {
+        //         "foreground": "#eeffffff",
+        //         "background": "#263238ff"
+        //     }
+        // },
         {
             "name": "Comment",
             "scope": [
@@ -531,7 +533,7 @@
                 "constant.other.color"
             ],
             "settings": {
-                "foreground": "#0f0"
+                "foreground": "#{{base0B-hex}}" //B
             }
         },
         {
@@ -714,7 +716,7 @@
                 "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
             ],
             "settings": {
-                "fontStyle": "normal",
+                "fontStyle": "",
                 "foreground": "#{{base0B-hex}}" //B
             }
         },
@@ -805,7 +807,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#82AAFF"
+                "foreground": "#{{base08-hex}}" //8
             }
         },
         {
@@ -930,7 +932,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#FF5370"
+                "foreground": "#{{base0E-hex}}" //E
             }
         },
         {
@@ -1048,7 +1050,7 @@
                 "text.html.markdown meta.dummy.line-break"
             ],
             "settings": {
-                "foreground": ""
+                "foreground": "#00000000"
             }
         },
         {
@@ -1115,7 +1117,7 @@
             ],
             "settings": {
                 "fontStyle": "strike",
-                "foreground": ""
+                // "foreground": ""
             }
         },
         {
@@ -1124,7 +1126,7 @@
                 "markup.quote punctuation.definition.blockquote.markdown"
             ],
             "settings": {
-                "background": "#{{base0C-hex}}", //C
+                // "background": "#{{base0C-hex}}", //C
                 "foreground": "#{{base0C-hex}}" //C
             }
         },
@@ -1135,7 +1137,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": ""
+                // "foreground": ""
             }
         },
         {
@@ -1199,7 +1201,7 @@
                 "variable.language.fenced.markdown"
             ],
             "settings": {
-                "foreground": "#f0f"
+                "foreground": "#{{base0E-hex}}" //E
             }
         },
         {
@@ -1208,7 +1210,7 @@
                 "variable.language.fenced.markdown"
             ],
             "settings": {
-                "foreground": "#f00"
+                "foreground": "#{{base08-hex}}" //8
             }
         },
         {
@@ -1218,7 +1220,7 @@
             ],
             "settings": {
                 "fontStyle": "bold",
-                "background": "#00000050",
+                // "background": "#00000050",
                 "foreground": "#{{base0C-hex}}" //C
             }
         },
@@ -1228,7 +1230,7 @@
                 "markup.table"
             ],
             "settings": {
-                "foreground": "#f0f"
+                "foreground": "#{{base0E-hex}}" //E
             }
         },
         {
