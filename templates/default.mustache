@@ -121,7 +121,9 @@
         "minimap.selectionHighlight": "#{{base02-hex}}6f", //2
 
         // Editor groups and tabs
-        "editorGroup.emptyBackground": "#{{base00-hex}}", //0
+        // Below is no longer supported as of 1.24
+        "editorGroup.background": "#{{base00-hex}}", //0
+        // Above is no longer supported as of 1.24
         // "editorGroup.border": "#f00",
         "editorGroup.dropBackground": "#{{base02-hex}}6f", //2
         "editorGroupHeader.noTabsBackground": "#{{base01-hex}}", //1
@@ -349,17 +351,17 @@
         "notificationsInfoIcon.foreground": "#{{base0D-hex}}", //D
 
         // Below is no longer supported as of 1.21
-        // "notification.background": "#{{base02-hex}}", //2
-        // "notification.foreground": "#{{base05-hex}}", //5
-        // "notification.buttonBackground": "#{{base0D-hex}}", //D
-        // "notification.buttonHoverBackground": "#{{base02-hex}}", //2
-        // "notification.buttonForeground": "#{{base07-hex}}", //7
-        // "notification.infoBackground": "#{{base0C-hex}}", //C
-        // "notification.infoForeground": "#{{base07-hex}}", //7
-        // "notification.warningBackground": "#{{base0A-hex}}", //A
-        // "notification.warningForeground": "#{{base07-hex}}", //7
-        // "notification.errorBackground": "#{{base08-hex}}", //8
-        // "notification.errorForeground": "#{{base07-hex}}", //7
+        "notification.background": "#{{base02-hex}}", //2
+        "notification.foreground": "#{{base05-hex}}", //5
+        "notification.buttonBackground": "#{{base0D-hex}}", //D
+        "notification.buttonHoverBackground": "#{{base02-hex}}", //2
+        "notification.buttonForeground": "#{{base07-hex}}", //7
+        "notification.infoBackground": "#{{base0C-hex}}", //C
+        "notification.infoForeground": "#{{base07-hex}}", //7
+        "notification.warningBackground": "#{{base0A-hex}}", //A
+        "notification.warningForeground": "#{{base07-hex}}", //7
+        "notification.errorBackground": "#{{base08-hex}}", //8
+        "notification.errorForeground": "#{{base07-hex}}", //7
         // Above is no longer supported as of 1.21
 
         // Extensions
@@ -421,8 +423,9 @@
         // Settings editor colors
         "settings.headerForeground": "#{{base05-hex}}", //5
         "settings.modifiedItemIndicator": "#{{base0D-hex}}", //D
-        // "settings.modifiedItemForeground": "#{{base0B-hex}}", //B
-        // "settings.inactiveSelectedItemBorder": "",
+        // Below was introduced temporarily in 1.26
+        "settings.modifiedItemForeground": "#{{base0D-hex}}", //D
+        // Above was introduced temporarily in 1.26
         "settings.dropdownBackground": "#{{base01-hex}}", //1
         "settings.dropdownForeground": "#{{base05-hex}}", //5
         // "settings.dropdownBorder": "",
@@ -436,7 +439,6 @@
         "settings.numberInputBackground": "#{{base01-hex}}", //1
         "settings.numberInputForeground": "#{{base05-hex}}", //5
         // "settings.numberInputBorder": "",
-        "settings.modifiedItemForeground": "#{{base0B-hex}}", //B
         // "settings.inactiveSelectedItemBorder": "",
 
         // Breadcrumbs
@@ -488,12 +490,6 @@
         "symbolIcon.variableForeground": "#{{base08-hex}}" //8
     },
     "tokenColors": [
-        // {
-        //     "settings": {
-        //         "foreground": "#eeffffff",
-        //         "background": "#263238ff"
-        //     }
-        // },
         {
             "name": "Comment",
             "scope": [
@@ -501,7 +497,7 @@
                 "punctuation.definition.comment"
             ],
             "settings": {
-                //"fontStyle": "italic",
+                "fontStyle": "italic",
                 "foreground": "#{{base03-hex}}" //3
             }
         },
@@ -807,7 +803,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#{{base08-hex}}" //8
+                "foreground": "#{{base0D-hex}}" //D
             }
         },
         {
@@ -1050,7 +1046,7 @@
                 "text.html.markdown meta.dummy.line-break"
             ],
             "settings": {
-                "foreground": "#00000000"
+                "foreground": "#{{base03-hex}}" //3
             }
         },
         {
@@ -1111,22 +1107,11 @@
             }
         },
         {
-            "name": "Markup - Strike",
-            "scope": [
-                "markup.strike"
-            ],
-            "settings": {
-                "fontStyle": "strike",
-                // "foreground": ""
-            }
-        },
-        {
             "name": "Markdown - Blockquote",
             "scope": [
                 "markup.quote punctuation.definition.blockquote.markdown"
             ],
             "settings": {
-                // "background": "#{{base0C-hex}}", //C
                 "foreground": "#{{base0C-hex}}" //C
             }
         },
@@ -1136,8 +1121,7 @@
                 "markup.quote"
             ],
             "settings": {
-                "fontStyle": "italic",
-                // "foreground": ""
+                "fontStyle": "italic"
             }
         },
         {
@@ -1220,7 +1204,6 @@
             ],
             "settings": {
                 "fontStyle": "bold",
-                // "background": "#00000050",
                 "foreground": "#{{base0C-hex}}" //C
             }
         },
