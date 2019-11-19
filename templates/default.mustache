@@ -121,7 +121,9 @@
         "minimap.selectionHighlight": "#{{base02-hex}}6f", //2
 
         // Editor groups and tabs
+        // Below is no longer supported as of 1.24
         "editorGroup.background": "#{{base00-hex}}", //0
+        // Above is no longer supported as of 1.24
         // "editorGroup.border": "#f00",
         "editorGroup.dropBackground": "#{{base02-hex}}6f", //2
         "editorGroupHeader.noTabsBackground": "#{{base01-hex}}", //1
@@ -311,8 +313,8 @@
         "statusBarItem.activeBackground": "#{{base03-hex}}", //3
         "statusBarItem.hoverBackground": "#{{base02-hex}}", //2
         "statusBarItem.prominentForeground": "#{{base07-hex}}", //7
-        "statusBarItem.prominentBackground": "#f0f",
-        "statusBarItem.prominentHoverBackground": "#f00",
+        "statusBarItem.prominentBackground": "#{{base0E-hex}}", //E
+        "statusBarItem.prominentHoverBackground": "#{{base08-hex}}", //8
         "statusBarItem.remoteBackground": "#{{base0B-hex}}", //B
         "statusBarItem.remoteForeground": "#{{base07-hex}}", //7
 
@@ -421,6 +423,9 @@
         // Settings editor colors
         "settings.headerForeground": "#{{base05-hex}}", //5
         "settings.modifiedItemIndicator": "#{{base0D-hex}}", //D
+        // Below was introduced temporarily in 1.26
+        "settings.modifiedItemForeground": "#{{base0D-hex}}", //D
+        // Above was introduced temporarily in 1.26
         "settings.dropdownBackground": "#{{base01-hex}}", //1
         "settings.dropdownForeground": "#{{base05-hex}}", //5
         // "settings.dropdownBorder": "",
@@ -434,7 +439,6 @@
         "settings.numberInputBackground": "#{{base01-hex}}", //1
         "settings.numberInputForeground": "#{{base05-hex}}", //5
         // "settings.numberInputBorder": "",
-        "settings.modifiedItemForeground": "#{{base0B-hex}}", //B
         // "settings.inactiveSelectedItemBorder": "",
 
         // Breadcrumbs
@@ -487,12 +491,6 @@
     },
     "tokenColors": [
         {
-            "settings": {
-                "foreground": "#eeffffff",
-                "background": "#263238ff"
-            }
-        },
-        {
             "name": "Comment",
             "scope": [
                 "comment",
@@ -531,7 +529,7 @@
                 "constant.other.color"
             ],
             "settings": {
-                "foreground": "#0f0"
+                "foreground": "#{{base0B-hex}}" //B
             }
         },
         {
@@ -714,7 +712,7 @@
                 "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
             ],
             "settings": {
-                "fontStyle": "normal",
+                "fontStyle": "",
                 "foreground": "#{{base0B-hex}}" //B
             }
         },
@@ -805,7 +803,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#82AAFF"
+                "foreground": "#{{base0D-hex}}" //D
             }
         },
         {
@@ -930,7 +928,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#FF5370"
+                "foreground": "#{{base0E-hex}}" //E
             }
         },
         {
@@ -1048,7 +1046,7 @@
                 "text.html.markdown meta.dummy.line-break"
             ],
             "settings": {
-                "foreground": ""
+                "foreground": "#{{base03-hex}}" //3
             }
         },
         {
@@ -1109,22 +1107,11 @@
             }
         },
         {
-            "name": "Markup - Strike",
-            "scope": [
-                "markup.strike"
-            ],
-            "settings": {
-                "fontStyle": "strike",
-                "foreground": ""
-            }
-        },
-        {
             "name": "Markdown - Blockquote",
             "scope": [
                 "markup.quote punctuation.definition.blockquote.markdown"
             ],
             "settings": {
-                "background": "#{{base0C-hex}}", //C
                 "foreground": "#{{base0C-hex}}" //C
             }
         },
@@ -1134,8 +1121,7 @@
                 "markup.quote"
             ],
             "settings": {
-                "fontStyle": "italic",
-                "foreground": ""
+                "fontStyle": "italic"
             }
         },
         {
@@ -1199,7 +1185,7 @@
                 "variable.language.fenced.markdown"
             ],
             "settings": {
-                "foreground": "#f0f"
+                "foreground": "#{{base0E-hex}}" //E
             }
         },
         {
@@ -1208,7 +1194,7 @@
                 "variable.language.fenced.markdown"
             ],
             "settings": {
-                "foreground": "#f00"
+                "foreground": "#{{base08-hex}}" //8
             }
         },
         {
@@ -1218,7 +1204,6 @@
             ],
             "settings": {
                 "fontStyle": "bold",
-                "background": "#00000050",
                 "foreground": "#{{base0C-hex}}" //C
             }
         },
@@ -1228,7 +1213,7 @@
                 "markup.table"
             ],
             "settings": {
-                "foreground": "#f0f"
+                "foreground": "#{{base0E-hex}}" //E
             }
         },
         {
