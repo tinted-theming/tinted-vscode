@@ -87,7 +87,7 @@
         "list.inactiveFocusBackground": "#{{base02-hex}}", //2
         "list.invalidItemForeground": "#{{base08-hex}}", //8
         "list.errorForeground": "#{{base08-hex}}", //8
-        "list.warningForeground": "#{{base09-hex}}", //9
+        "list.warningForeground": "#{{base0A-hex}}", //A
         "listFilterWidget.background": "#{{base00-hex}}", //0
         // "listFilterWidget.outline": "#f00",
         "listFilterWidget.noMatchesOutline": "#{{base08-hex}}", //8
@@ -462,18 +462,18 @@
         "symbolIcon.constantForeground": "#{{base09-hex}}", //9
         "symbolIcon.constructorForeground": "#{{base0D-hex}}", //D
         "symbolIcon.enumeratorForeground": "#{{base09-hex}}", //9
-        "symbolIcon.enumeratorMemberForeground": "#f0f",
+        "symbolIcon.enumeratorMemberForeground": "#{{base0D-hex}}", //D
         "symbolIcon.eventForeground": "#{{base0A-hex}}", //A
         "symbolIcon.fieldForeground": "#{{base08-hex}}", //8
-        "symbolIcon.fileForeground": "#f0f",
-        "symbolIcon.folderForeground": "#f00",
+        "symbolIcon.fileForeground": "#{{base05-hex}}", //5
+        "symbolIcon.folderForeground": "#{{base05-hex}}", //5
         "symbolIcon.functionForeground": "#{{base0D-hex}}", //D,
         "symbolIcon.interfaceForeground": "#{{base0D-hex}}", //D
         "symbolIcon.keyForeground": "#f0f",
         "symbolIcon.keywordForeground": "#{{base0E-hex}}", //E
         "symbolIcon.methodForeground": "#{{base0D-hex}}", //D
         "symbolIcon.moduleForeground": "#{{base05-hex}}", //5
-        "symbolIcon.namespaceForeground": "#f0f",
+        "symbolIcon.namespaceForeground": "#{{base05-hex}}", //5
         "symbolIcon.nullForeground": "#{{base0F-hex}}", //F
         "symbolIcon.numberForeground": "#{{base09-hex}}", //9
         "symbolIcon.objectForeground": "#f0f",
@@ -481,13 +481,30 @@
         "symbolIcon.packageForeground": "#f0f",
         "symbolIcon.propertyForeground": "#{{base05-hex}}", //5
         "symbolIcon.referenceForeground": "#f0f",
-        "symbolIcon.snippetForeground": "#f0f",
+        "symbolIcon.snippetForeground": "#{{base05-hex}}", //5
         "symbolIcon.stringForeground": "#{{base0B-hex}}", //B
         "symbolIcon.structForeground": "#{{base0A-hex}}", //A
         "symbolIcon.textForeground": "#{{base05-hex}}", //5
         "symbolIcon.typeParameterForeground": "#f0f",
         "symbolIcon.unitForeground": "#f0f",
-        "symbolIcon.variableForeground": "#{{base08-hex}}" //8
+        "symbolIcon.variableForeground": "#{{base08-hex}}", //8
+
+        // Debug Icons
+        "debugIcon.breakpointForeground": "#{{base08-hex}}", //8
+        "debugIcon.breakpointDisabledForeground": "#{{base04-hex}}", //4
+        "debugIcon.breakpointUnverifiedForeground": "#{{base02-hex}}", //2
+        "debugIcon.breakpointCurrentStackframeForeground": "#{{base0A-hex}}", //A
+        "debugIcon.breakpointStackframeForeground": "#{{base0F-hex}}", //F
+        "debugIcon.startForeground": "#{{base0B-hex}}", //B
+        "debugIcon.pauseForeground": "#{{base0D-hex}}", //D
+        "debugIcon.stopForeground": "#{{base08-hex}}", //8
+        "debugIcon.disconnectForeground": "#{{base08-hex}}", //8
+        "debugIcon.restartForeground": "#{{base0B-hex}}", //B
+        "debugIcon.stepOverForeground": "#{{base0D-hex}}", //D
+        "debugIcon.stepIntoForeground": "#{{base0C-hex}}", //C
+        "debugIcon.stepOutForeground": "#{{base0E-hex}}", //E
+        "debugIcon.continueForeground": "#{{base0B-hex}}", //B
+        "debugIcon.stepBackForeground": "#{{base0F-hex}}" //F
     },
     "tokenColors": [
         {
@@ -722,7 +739,7 @@
                 "entity.name",
                 "support.type",
                 "support.class",
-                "support.orther.namespace.use.php",
+                "support.other.namespace.use.php",
                 "meta.use.php",
                 "support.other.namespace.php",
                 "markup.changed.git_gutter",
@@ -1179,7 +1196,7 @@
             }
         },
         {
-            "name": "Markdown - Fenced Bode Block Variable",
+            "name": "Markdown - Fenced Code Block Variable",
             "scope": [
                 "markup.raw.block.fenced.markdown",
                 "variable.language.fenced.markdown"
