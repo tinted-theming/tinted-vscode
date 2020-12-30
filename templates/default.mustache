@@ -15,6 +15,7 @@
         "descriptionForeground": "#{{base03-hex}}", //3
         "errorForeground": "#{{base08-hex}}", //8
         "icon.foreground": "#{{base04-hex}}", //4
+        // "sash.hoverBorder": "#ff0000",
 
         // Window border
         // "window.activeBorder": "#f00",
@@ -33,6 +34,9 @@
         "button.background": "#{{base01-hex}}", //1
         "button.foreground": "#{{base07-hex}}", //7
         "button.hoverBackground": "#{{base04-hex}}", //4
+        "button.secondaryForeground": "#{{base07-hex}}", //7
+        "button.secondaryBackground": "#{{base0E-hex}}", //E
+        "button.secondaryHoverBackground": "#{{base04-hex}}", //4
         "checkbox.background": "#{{base00-hex}}", //0
         "checkbox.foreground": "#{{base05-hex}}", //5
         // "checkbox.border": "#f00",
@@ -50,6 +54,7 @@
         "input.placeholderForeground": "#{{base03-hex}}", //3
         "inputOption.activeBackground": "#{{base02-hex}}", //2
         "inputOption.activeBorder": "#{{base09-hex}}", //9
+        "inputOption.activeForeground": "#{{base05-hex}}", //5
         "inputValidation.errorBackground": "#{{base08-hex}}", //8
         "inputValidation.errorForeground": "#{{base05-hex}}", //5
         "inputValidation.errorBorder": "#{{base08-hex}}", //8
@@ -94,10 +99,12 @@
         "list.filterMatchBackground": "#{{base02-hex}}", //2
         // "list.filterMatchBorder": "#f00",
         "tree.indentGuidesStroke": "#{{base05-hex}}", //5
+        // "list.deemphasizedForeground": "#ff0000",
 
         // Activity bar
         "activityBar.background": "#{{base00-hex}}", //0
         "activityBar.dropBackground": "#{{base07-hex}}", //7
+        // "activityBar.dropBorder": "#ff0000",
         "activityBar.foreground": "#{{base05-hex}}", //5
         "activityBar.inactiveForeground": "#{{base03-hex}}", //3
         // "activityBar.border": "#f00", //0
@@ -105,6 +112,7 @@
         "activityBarBadge.foreground": "#{{base07-hex}}", //7
         // "activityBar.activeBorder": "#f00",
         "activityBar.activeBackground": "#{{base02-hex}}", //2
+        // "activityBar.activeFocusBorder": "#ff0000",
 
         // Side bar
         "sideBar.background": "#{{base01-hex}}", //1
@@ -119,6 +127,15 @@
         //Minimap
         "minimap.findMatchHighlight": "#{{base0A-hex}}6f", //A
         "minimap.selectionHighlight": "#{{base02-hex}}6f", //2
+        "minimap.errorHighlight": "#{{base08-hex}}", //8
+        "minimap.warningHighlight": "#{{base0A-hex}}", //A
+        "minimap.background": "#{{base00-hex}}", //0
+        // "minimapSlider.background": "#f00",
+        // "minimapSlider.hoverBackground": "#f00",
+        // "minimapSlider.activeBackground": "#f00",
+        "minimapGutter.addedBackground": "#{{base0B-hex}}", //B
+        "minimapGutter.modifiedBackground": "#{{base0E-hex}}", //E
+        "minimapGutter.deletedBackground": "#{{base08-hex}}", //8
 
         // Editor groups and tabs
         // Below is no longer supported as of 1.24
@@ -129,6 +146,7 @@
         "editorGroupHeader.noTabsBackground": "#{{base01-hex}}", //1
         "editorGroupHeader.tabsBackground": "#{{base01-hex}}", //1
         // "editorGroupHeader.tabsBorder": "#f00",
+        // "editorGroupHeader.border": "#ff0000",
         "editorGroup.emptyBackground": "#{{base00-hex}}", //0
         // "editorGroup.focusedEmptyBorder": "#f00"
         "tab.activeBackground": "#{{base00-hex}}", //0
@@ -138,11 +156,16 @@
         // "tab.unfocusedActiveBorder": "#f00",
         // "tab.activeBorderTop": "#f00",
         // "tab.unfocusedActiveBorderTop": "#f00",
+        // "tab.lastPinnedBorder": "#ff0000",
         "tab.inactiveBackground": "#{{base01-hex}}", //1
+        // "tab.unfocusedInactiveBackground": "#ff0000",
         "tab.inactiveForeground": "#{{base03-hex}}", //3
         "tab.unfocusedActiveForeground": "#{{base04-hex}}", //4
         "tab.unfocusedInactiveForeground": "#{{base03-hex}}", //3
         "tab.hoverBackground": "#{{base02-hex}}", //2
+        // "tab.unfocusedHoverForeground": "#ff0000",
+        // "tab.hoverForeground": "#ff0000",
+        // "tab.unfocusedHoverForeground": "#ff0000",
         "tab.unfocusedHoverBackground": "#{{base02-hex}}", //2
         // "tab.hoverBorder": "#f00",
         // "tab.unfocusedHoverBorder": "#f00",
@@ -180,11 +203,17 @@
         "editorLink.activeForeground": "#{{base0D-hex}}", //D
         "editor.rangeHighlightBackground": "#{{base01-hex}}6f", //1
         // "editor.rangeHighlightBorder": "#f00",
+        // "editor.symbolHighlightBackground": "#ff0000",
+        // "editor.symbolHighlightBorder": "#ff0000",
         "editorWhitespace.foreground": "#{{base03-hex}}", //3
         "editorIndentGuide.background": "#{{base03-hex}}", //3
         "editorIndentGuide.activeBackground": "#{{base04-hex}}", //4
         "editorRuler.foreground": "#{{base03-hex}}", //3
+        // "editor.linkedEditingBackground": "#ff0000",
         "editorCodeLens.foreground": "#{{base02-hex}}", //2
+        // "searchEditor.findMatchBackground": "#ff0000",
+        // "searchEditor.findMatchBorder": "#ff0000",
+        // "searchEditor.textInputBorder": "#ff0000",
 
         // Lightbulb
         "editorLightBulb.foreground": "#{{base0A-hex}}", //A
@@ -194,8 +223,11 @@
         // "editorBracketMatch.border": "#f00",
         // "editorError.border": "#f0f",
 
+        // "editor.foldBackground": "#ff0000",
+
         // Overview ruler
         // "editorOverviewRuler.border": "#f00",
+        // "editorOverviewRuler.background": "#ff0000",
         "editorOverviewRuler.findMatchForeground": "#{{base0A-hex}}6f", //A
         "editorOverviewRuler.rangeHighlightForeground": "#{{base03-hex}}6f", //3
         "editorOverviewRuler.selectionHighlightForeground": "#{{base02-hex}}6f", //2
@@ -211,10 +243,13 @@
 
         // Errors and warnings
         "editorError.foreground": "#{{base08-hex}}", //8
+        // "editorError.background": "#bf616a6f", //8
         // "editorError.border": "",
         "editorWarning.foreground": "#{{base0A-hex}}", //A
+        // "editorWarning.background": "#ebcb8b6f", //A
         // "editorWarning.border": "#f00",
         "editorInfo.foreground": "#{{base0C-hex}}", //C
+        // "editorInfo.background": "#96b5b46f", //C
         // "editorInfo.border": "",
         "editorHint.foreground": "#{{base0D-hex}}", //D
         // "editorHint.border": "#f00",
@@ -232,6 +267,7 @@
         "editorGutter.deletedBackground": "#{{base08-hex}}", //8
         "editorGutter.modifiedBackground": "#{{base0E-hex}}", //E
         "editorGutter.commentRangeForeground": "#{{base04-hex}}", //4
+        "editorGutter.foldingControlForeground": "#{{base05-hex}}", //5
 
         // Diff editor colors
         "diffEditor.insertedTextBackground": "#{{base0B-hex}}20",
@@ -239,6 +275,7 @@
         "diffEditor.removedTextBackground": "#{{base08-hex}}20",
         // "diffEditor.removedTextBorder": "#f00",
         // "diffEditor.border": "#f00",
+        "diffEditor.diagonalFill": "#{{base02-hex}}", //2
 
         // Editor widget colors
         "editorWidget.foreground": "#{{base05-hex}}", //5
@@ -250,6 +287,7 @@
         "editorSuggestWidget.foreground": "#{{base05-hex}}", //5
         "editorSuggestWidget.highlightForeground": "#{{base0D-hex}}", //D
         "editorSuggestWidget.selectedBackground": "#{{base02-hex}}", //2
+        "editorHoverWidget.foreground": "#{{base05-hex}}", //5
         "editorHoverWidget.background": "#{{base00-hex}}", //1
         // "editorHoverWidget.border": "#f00",
         // "editorHoverWidget.statusBarBackground": "#f00",
@@ -276,7 +314,7 @@
         "peekViewTitleDescription.foreground": "#{{base03-hex}}", //3
         "peekViewTitleLabel.foreground": "#{{base05-hex}}", //5
 
-        // Merge conflicts
+        // Merge conflicts colors
         "merge.currentContentBackground": "#{{base0D-hex}}40", //D
         "merge.currentHeaderBackground": "#{{base0D-hex}}40", //D
         "merge.incomingContentBackground": "#{{base0B-hex}}60", //B
@@ -292,12 +330,18 @@
         "panel.background": "#{{base00-hex}}", //0
         // "panel.border": "#f00",
         "panel.dropBackground": "#{{base01-hex}}6f", //1
+        // "panel.dropBorder": "#ff0000",
         // "panelTitle.activeBorder": "#f00",
         "panelTitle.activeForeground": "#{{base05-hex}}", //5
         "panelTitle.inactiveForeground": "#{{base03-hex}}", //3
         // "panelInput.border": "#f00",
+        // "panelSection.border": "#ff0000",
+        // "panelSection.dropBackground": "#ff0000",
+        // "panelSectionHeader.background": "#ff0000",
+        // "panelSectionHeader.foreground": "#ff0000",
+        // "panelSectionHeader.border": "#ff0000",
 
-        // Preview
+        // Preview colors
         // "imagePreview.border": "#f00",
 
         // Status bar colors
@@ -317,6 +361,8 @@
         "statusBarItem.prominentHoverBackground": "#{{base08-hex}}", //8
         "statusBarItem.remoteBackground": "#{{base0B-hex}}", //B
         "statusBarItem.remoteForeground": "#{{base07-hex}}", //7
+        "statusBarItem.errorBackground": "#{{base08-hex}}", //8
+        "statusBarItem.errorForeground": "#{{base07-hex}}", //7
 
         // Title bar colors (macOS)
         "titleBar.activeBackground": "#{{base00-hex}}", //0
@@ -364,18 +410,19 @@
         "notification.errorForeground": "#{{base07-hex}}", //7
         // Above is no longer supported as of 1.21
 
-        // Extensions
+        // Extensions colors
         "extensionButton.prominentBackground": "#{{base0B-hex}}", //B
         "extensionButton.prominentForeground": "#{{base07-hex}}", //7
         "extensionButton.prominentHoverBackground": "#{{base02-hex}}", //2
         "extensionBadge.remoteBackground": "#{{base09-hex}}", //9
         "extensionBadge.remoteForeground": "#{{base07-hex}}", //7
 
-        // Quick picker
+        // Quick picker colors
         // "pickerGroup.border": "#f00",
         "pickerGroup.foreground": "#{{base03-hex}}", //3
         "quickInput.background": "#{{base01-hex}}", //1
         "quickInput.foreground": "#{{base05-hex}}", //5
+        // "quickInputTitle.background": "#ff0000",
 
         // Integrated terminal colors
         "terminal.background": "#{{base00-hex}}", //0
@@ -400,22 +447,39 @@
         // "terminalCursor.background": "#f0f",
         "terminalCursor.foreground": "#{{base05-hex}}", //5
 
-        // Debug
+        // Debug colors
         "debugToolBar.background": "#{{base01-hex}}", //1
         // "debugToolBar.border": "#f0f",
         // "editor.stackFrameHighlightBackground": "#f0f",
         // "editor.focusedStackFrameHighlightBackground": "#f0f",
+        // "debugView.exceptionLabelForeground": "#ff0000",
+        // "debugView.exceptionLabelBackground": "#ff0000",
+        "debugView.stateLabelForeground": "#{{base07-hex}}", //7
+        "debugView.stateLabelBackground": "#{{base0D-hex}}", //D
+        "debugView.valueChangedHighlight": "#{{base0D-hex}}", //D
+        "debugTokenExpression.name": "#{{base0E-hex}}", //E
+        "debugTokenExpression.value": "#{{base05-hex}}", //5
+        "debugTokenExpression.string": "#{{base0B-hex}}", //B
+        "debugTokenExpression.boolean": "#{{base09-hex}}", //9
+        "debugTokenExpression.number": "#{{base09-hex}}", //9
+        "debugTokenExpression.error": "#{{base08-hex}}",  //8
 
-        // Welcome page
+        // Welcome page colors
         "welcomePage.background": "#{{base00-hex}}", //0
         "welcomePage.buttonBackground": "#{{base01-hex}}", //1
         "welcomePage.buttonHoverBackground": "#{{base02-hex}}", //2
         "walkThrough.embeddedEditorBackground": "#{{base00-hex}}", //0
 
+        // Source Control colors
+        // "scm.providerBorder": "#ff0000",
+
         // Git colors
+        "gitDecoration.addedResourceForeground": "#{{base0B-hex}}", //B
         "gitDecoration.modifiedResourceForeground": "#{{base0E-hex}}", //E
+        "gitDecoration.stageModifiedResourceForeground": "#{{base0E-hex}}", //E
         "gitDecoration.deletedResourceForeground": "#{{base08-hex}}", //8
-        "gitDecoration.untrackedResourceForeground": "#{{base0B-hex}}", //B
+        "gitDecoration.stageDeletedResourceForeground": "#{{base08-hex}}", //8
+        "gitDecoration.untrackedResourceForeground": "#{{base09-hex}}", //9
         "gitDecoration.ignoredResourceForeground": "#{{base03-hex}}", //3
         "gitDecoration.conflictingResourceForeground": "#{{base0A-hex}}", //A
         "gitDecoration.submoduleResourceForeground": "#{{base0F-hex}}", //F
@@ -440,21 +504,22 @@
         "settings.numberInputForeground": "#{{base05-hex}}", //5
         // "settings.numberInputBorder": "",
         // "settings.inactiveSelectedItemBorder": "",
+        "settings.focusedRowBackground": "#{{base02-hex}}", //2
 
-        // Breadcrumbs
+        // Breadcrumbs colors
         "breadcrumb.foreground": "#{{base05-hex}}", //5
         "breadcrumb.background": "#{{base01-hex}}", //1
         "breadcrumb.focusForeground": "#{{base06-hex}}", //6
         "breadcrumb.activeSelectionForeground": "#{{base07-hex}}", //7
         "breadcrumbPicker.background": "#{{base01-hex}}", //1
 
-        // Snippets
+        // Snippets colors
         "editor.snippetTabstopHighlightBackground": "#{{base02-hex}}", //2
         // "editor.snippetTabstopHighlightBorder": "#f00",
         "editor.snippetFinalTabstopHighlightBackground": "#{{base03-hex}}", //3
         // "editor.snippetFinalTabstopHighlightBorder": "#f00",
 
-        // Symbol Icons
+        // Symbol Icons colors
         "symbolIcon.arrayForeground": "#{{base05-hex}}", //5
         "symbolIcon.booleanForeground": "#{{base09-hex}}", //9
         "symbolIcon.classForeground": "#{{base0A-hex}}", //A
@@ -489,7 +554,7 @@
         "symbolIcon.unitForeground": "#f0f",
         "symbolIcon.variableForeground": "#{{base08-hex}}", //8
 
-        // Debug Icons
+        // Debug Icons colors
         "debugIcon.breakpointForeground": "#{{base08-hex}}", //8
         "debugIcon.breakpointDisabledForeground": "#{{base04-hex}}", //4
         "debugIcon.breakpointUnverifiedForeground": "#{{base02-hex}}", //2
@@ -504,7 +569,43 @@
         "debugIcon.stepIntoForeground": "#{{base0C-hex}}", //C
         "debugIcon.stepOutForeground": "#{{base0E-hex}}", //E
         "debugIcon.continueForeground": "#{{base0B-hex}}", //B
-        "debugIcon.stepBackForeground": "#{{base0F-hex}}" //F
+        "debugIcon.stepBackForeground": "#{{base0F-hex}}", //F
+        "debugConsole.infoForeground": "#{{base05-hex}}", //5
+        "debugConsole.warningForeground": "#{{base0A-hex}}", //A
+        "debugConsole.errorForeground": "#{{base08-hex}}", //8
+        "debugConsole.sourceForeground": "#{{base05-hex}}", //5
+        "debugConsoleInputIcon.foreground": "#{{base05-hex}}", //5
+
+        // Notebook colors
+        // "notebook.cellBorderColor": "#ff0000",
+        // "notebook.focusedEditorBorder": "#ff0000",
+        // "notebookStatusSuccessIcon.foreground": "#ff0000",
+        // "notebookStatusErrorIcon.foreground": "#ff0000",
+        // "notebookStatusRunningIcon.foreground": "#ff0000",
+        // "notebook.outputContainerBackgroundColor": "#ff0000",
+        // "notebook.cellToolbarSeparator": "#ff0000",
+        // "notebook.focusedCellBackground": "#ff0000",
+        // "notebook.cellHoverBackground": "#ff0000",
+        // "notebook.focusedCellBorder": "#ff0000",
+        // "notebook.selectedCellBorder": "#ff0000",
+        // "notebook.cellStatusBarItemHoverBackground": "#ff0000",
+        // "notebook.cellInsertionIndicator": "#ff0000",
+        // "notebookScrollbarSlider.background": "#ff0000",
+        // "notebookScrollbarSlider.hoverBackground": "#ff0000",
+        // "notebookScrollbarSlider.activeBackground": "#ff0000",
+        // "notebook.symbolHighlightBackground": "#ff0000",
+        "notebook.rowHoverBackground": "#{{base01-hex}}", //1 // also used in "Settings Editor colors"
+        // "notebook.focusedRowBorder": "#ff0000", // also used in "Settings Editor colors"
+
+        // Chart colors
+        "charts.foreground": "#{{base05-hex}}", //5
+        "charts.lines": "#{{base05-hex}}", //5
+        "charts.red": "#{{base08-hex}}", //8
+        "charts.blue": "#{{base0D-hex}}", //D
+        "charts.yellow": "#{{base0A-hex}}", //A
+        "charts.orange": "#{{base09-hex}}", //9
+        "charts.green": "#{{base0B-hex}}", //B
+        "charts.purple": "#{{base0E-hex}}" //E
     },
     "tokenColors": [
         {
