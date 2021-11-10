@@ -2,6 +2,18 @@
 
 See the [Base16 repository](https://github.com/chriskempson/base16) for more info.
 
-## Installation
+## Usage
 
-Install [Base16 Theme Generator](https://marketplace.visualstudio.com/items?itemName=golf1052.base16-generator) for Visual Studio Code.
+```
+npm install --global base16-builder
+```
+
+To build themes 
+```
+base16-builder
+```
+
+To convert themes to monaco compatible format use
+[monaco-vscode-textmate-theme-converter](https://github.com/Nishkalkashyap/monaco-vscode-textmate-theme-converter).
+
+Replace `inherit: false` to `inherit: true` and set `"base": "vs"` for light themes.
