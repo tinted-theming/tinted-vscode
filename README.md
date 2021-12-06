@@ -10,7 +10,7 @@ npm install --global base16-builder
 
 To build themes 
 ```
-base16-builder
+base16 builder
 ```
 
 To convert themes to monaco compatible format use
