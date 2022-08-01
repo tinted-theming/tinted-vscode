@@ -10,6 +10,7 @@
         // Base colors
         // "focusBorder": "#f00", //7
         "foreground": "#{{base05-hex}}", //5
+        "disabledForeground": "#{{base04-hex}}", //4
         "widget.shadow": "#{{base00-hex}}", //0
         "selection.background": "#{{base0D-hex}}", //D
         "descriptionForeground": "#{{base03-hex}}", //3
@@ -30,9 +31,15 @@
         "textPreformat.foreground": "#{{base0D-hex}}", //D
         "textSeparator.foreground": "#f0f",
 
+        // Action colors
+        "toolbar.hoverBackground": "#{{base02-hex}}", //2
+        // "toolbar.hoverOutline": "#ff0000",
+        "toolbar.activeBackground": "#{{base03-hex}}", //3
+
         // Button control
-        "button.background": "#{{base01-hex}}", //1
+        "button.background": "#{{base0D-hex}}", //D
         "button.foreground": "#{{base07-hex}}", //7
+        // "button.border": "#ff0000",
         "button.hoverBackground": "#{{base04-hex}}", //4
         "button.secondaryForeground": "#{{base07-hex}}", //7
         "button.secondaryBackground": "#{{base0E-hex}}", //E
@@ -65,7 +72,7 @@
         "inputValidation.warningForeground": "#{{base05-hex}}", //5
         "inputValidation.warningBorder": "#{{base0A-hex}}", //A
 
-        // Scroll bar control
+        // Scrollbar control
         "scrollbar.shadow": "#{{base01-hex}}", //1
         "scrollbarSlider.activeBackground": "#{{base04-hex}}6f", //4
         "scrollbarSlider.background": "#{{base02-hex}}6f", //2
@@ -101,9 +108,11 @@
         "tree.indentGuidesStroke": "#{{base05-hex}}", //5
         // "list.deemphasizedForeground": "#ff0000",
 
-        // Activity bar
+        // Activity Bar
         "activityBar.background": "#{{base00-hex}}", //0
+        // Below is no longer supported as of 1.52
         "activityBar.dropBackground": "#{{base07-hex}}", //7
+        // Above is no longer supported as of 1.52
         // "activityBar.dropBorder": "#ff0000",
         "activityBar.foreground": "#{{base05-hex}}", //5
         "activityBar.inactiveForeground": "#{{base03-hex}}", //3
@@ -114,7 +123,7 @@
         "activityBar.activeBackground": "#{{base02-hex}}", //2
         // "activityBar.activeFocusBorder": "#ff0000",
 
-        // Side bar
+        // Side Bar
         "sideBar.background": "#{{base01-hex}}", //1
         "sideBar.foreground": "#{{base05-hex}}", //5
         // "sideBar.border": "#f00", //1
@@ -130,6 +139,8 @@
         "minimap.errorHighlight": "#{{base08-hex}}", //8
         "minimap.warningHighlight": "#{{base0A-hex}}", //A
         "minimap.background": "#{{base00-hex}}", //0
+        "minimap.selectionOccurrenceHighlight": "#{{base03-hex}}", //3
+        // "minimap.foregroundOpacity": "#ff0000",
         // "minimapSlider.background": "#f00",
         // "minimapSlider.hoverBackground": "#f00",
         // "minimapSlider.activeBackground": "#f00",
@@ -137,7 +148,7 @@
         "minimapGutter.modifiedBackground": "#{{base0E-hex}}", //E
         "minimapGutter.deletedBackground": "#{{base08-hex}}", //8
 
-        // Editor groups and tabs
+        // Editor Groups & Tabs
         // Below is no longer supported as of 1.24
         "editorGroup.background": "#{{base00-hex}}", //0
         // Above is no longer supported as of 1.24
@@ -149,6 +160,9 @@
         // "editorGroupHeader.border": "#ff0000",
         "editorGroup.emptyBackground": "#{{base00-hex}}", //0
         // "editorGroup.focusedEmptyBorder": "#f00"
+        "editorGroup.dropIntoPromptForeground": "#{{base06-hex}}", //5
+        "editorGroup.dropIntoPromptBackground": "#{{base00-hex}}", //0
+        // "editorGroup.dropIntoPromptBorder": "#ff0000",
         "tab.activeBackground": "#{{base00-hex}}", //0
         "tab.unfocusedActiveBackground": "#{{base00-hex}}", //0
         "tab.activeForeground": "#{{base05-hex}}", //5
@@ -163,10 +177,9 @@
         "tab.unfocusedActiveForeground": "#{{base04-hex}}", //4
         "tab.unfocusedInactiveForeground": "#{{base03-hex}}", //3
         "tab.hoverBackground": "#{{base02-hex}}", //2
-        // "tab.unfocusedHoverForeground": "#ff0000",
+        "tab.unfocusedHoverBackground": "#{{base02-hex}}", //2
         // "tab.hoverForeground": "#ff0000",
         // "tab.unfocusedHoverForeground": "#ff0000",
-        "tab.unfocusedHoverBackground": "#{{base02-hex}}", //2
         // "tab.hoverBorder": "#f00",
         // "tab.unfocusedHoverBorder": "#f00",
         "tab.activeModifiedBorder": "#{{base0D-hex}}", //D
@@ -174,6 +187,8 @@
         "tab.unfocusedActiveModifiedBorder": "#{{base0D-hex}}", //D
         "tab.unfocusedInactiveModifiedBorder": "#{{base0D-hex}}", //D
         "editorPane.background": "#{{base00-hex}}", //0
+        // "sideBySideEditor.horizontalBorder": "#ff0000",
+        // "sideBySideEditor.verticalBorder": "#ff0000",
 
         // Editor colors
         "editor.background": "#{{base00-hex}}", //0
@@ -197,8 +212,13 @@
         // "editor.findMatchBorder": "#f00",
         // "editor.findMatchHighlightBorder": "#f00",
         // "editor.findRangeHighlightBorder": "#f00",
+        "searchEditor.findMatchBackground": "#{{base0A-hex}}6f", //A
+        // "searchEditor.findMatchBorder": "#ff0000",
+        // "searchEditor.textInputBorder": "#ff0000",
         "editor.hoverHighlightBackground": "#{{base02-hex}}6f", //2
         "editor.lineHighlightBackground": "#{{base01-hex}}", //1
+        // "editorUnicodeHighlight.border": "#ff0000",
+        // "editorUnicodeHighlight.background": "#ff0000",
         // "editor.lineHighlightBorder": "#f00",
         "editorLink.activeForeground": "#{{base0D-hex}}", //D
         "editor.rangeHighlightBackground": "#{{base01-hex}}6f", //1
@@ -208,26 +228,48 @@
         "editorWhitespace.foreground": "#{{base03-hex}}", //3
         "editorIndentGuide.background": "#{{base03-hex}}", //3
         "editorIndentGuide.activeBackground": "#{{base04-hex}}", //4
+        "editorInlayHint.background": "#{{base01-hex}}", //1
+        "editorInlayHint.foreground": "#{{base05-hex}}", //5
+        "editorInlayHint.typeBackground": "#{{base01-hex}}", //1
+        "editorInlayHint.typeForeground": "#{{base05-hex}}", //5
+        "editorInlayHint.parameterBackground": "#{{base01-hex}}", //1
+        "editorInlayHint.parameterForeground": "#{{base05-hex}}", //5
         "editorRuler.foreground": "#{{base03-hex}}", //3
         // "editor.linkedEditingBackground": "#ff0000",
+        /// CodeLens
         "editorCodeLens.foreground": "#{{base02-hex}}", //2
-        // "searchEditor.findMatchBackground": "#ff0000",
-        // "searchEditor.findMatchBorder": "#ff0000",
-        // "searchEditor.textInputBorder": "#ff0000",
-
-        // Lightbulb
+        /// Lightbulb
         "editorLightBulb.foreground": "#{{base0A-hex}}", //A
         "editorLightBulbAutoFix.foreground": "#{{base0D-hex}}", //D
-
+        /// Bracket matches
         "editorBracketMatch.background": "#{{base02-hex}}", //2
         // "editorBracketMatch.border": "#f00",
-        // "editorError.border": "#f0f",
-
+        /// Bracket pair colorization
+        "editorBracketHighlight.foreground1": "#{{base08-hex}}", //8
+        "editorBracketHighlight.foreground2": "#{{base09-hex}}", //9
+        "editorBracketHighlight.foreground3": "#{{base0A-hex}}", //A
+        "editorBracketHighlight.foreground4": "#{{base0B-hex}}", //B
+        "editorBracketHighlight.foreground5": "#{{base0D-hex}}", //D
+        "editorBracketHighlight.foreground6": "#{{base0E-hex}}", //E
+        "editorBracketHighlight.unexpectedBracket.foreground": "#{{base0F-hex}}", //F
+        /// Bracket pair guides
+        // "editorBracketPairGuide.activeBackground1": "#ff0000",
+        // "editorBracketPairGuide.activeBackground2": "#ff0000",
+        // "editorBracketPairGuide.activeBackground3": "#ff0000",
+        // "editorBracketPairGuide.activeBackground4": "#ff0000",
+        // "editorBracketPairGuide.activeBackground5": "#ff0000",
+        // "editorBracketPairGuide.activeBackground6": "#ff0000",
+        // "editorBracketPairGuide.background1": "#ff0000",
+        // "editorBracketPairGuide.background2": "#ff0000",
+        // "editorBracketPairGuide.background3": "#ff0000",
+        // "editorBracketPairGuide.background4": "#ff0000",
+        // "editorBracketPairGuide.background5": "#ff0000",
+        // "editorBracketPairGuide.background6": "#ff0000",
+        /// Folding
         // "editor.foldBackground": "#ff0000",
-
-        // Overview ruler
-        // "editorOverviewRuler.border": "#f00",
+        /// Overview ruler
         // "editorOverviewRuler.background": "#ff0000",
+        // "editorOverviewRuler.border": "#f00",
         "editorOverviewRuler.findMatchForeground": "#{{base0A-hex}}6f", //A
         "editorOverviewRuler.rangeHighlightForeground": "#{{base03-hex}}6f", //3
         "editorOverviewRuler.selectionHighlightForeground": "#{{base02-hex}}6f", //2
@@ -240,34 +282,37 @@
         "editorOverviewRuler.warningForeground": "#{{base0A-hex}}", //A
         "editorOverviewRuler.infoForeground": "#{{base0C-hex}}", //C
         "editorOverviewRuler.bracketMatchForeground": "#{{base06-hex}}", //6
-
-        // Errors and warnings
+        /// Errors and warnings
         "editorError.foreground": "#{{base08-hex}}", //8
-        // "editorError.background": "#bf616a6f", //8
+        // "editorError.background": "#{{base08-hex}}6f", //8
         // "editorError.border": "",
         "editorWarning.foreground": "#{{base0A-hex}}", //A
-        // "editorWarning.background": "#ebcb8b6f", //A
-        // "editorWarning.border": "#f00",
+        // "editorWarning.background": "#{{base0A-hex}}6f", //A
+        // "editorWarning.border": "#f00", 
         "editorInfo.foreground": "#{{base0C-hex}}", //C
-        // "editorInfo.background": "#96b5b46f", //C
+        // "editorInfo.background": "#{{base0C-hex}}6f", //C
         // "editorInfo.border": "",
         "editorHint.foreground": "#{{base0D-hex}}", //D
         // "editorHint.border": "#f00",
         "problemsErrorIcon.foreground": "#{{base08-hex}}", //8
         "problemsWarningIcon.foreground": "#{{base0A-hex}}", //A
         "problemsInfoIcon.foreground": "#{{base0C-hex}}", //C
-
-        // Unused source code
+        /// Unused source code
         // "editorUnnecessaryCode.border": "#f00",
         // "editorUnnecessaryCode.opacity": "#f00",
-
-        // Gutter
-        "editorGutter.addedBackground": "#{{base0B-hex}}", //B
+        /// Gutter
         "editorGutter.background": "#{{base00-hex}}", //0
-        "editorGutter.deletedBackground": "#{{base08-hex}}", //8
         "editorGutter.modifiedBackground": "#{{base0E-hex}}", //E
+        "editorGutter.addedBackground": "#{{base0B-hex}}", //B
+        "editorGutter.deletedBackground": "#{{base08-hex}}", //8
         "editorGutter.commentRangeForeground": "#{{base04-hex}}", //4
         "editorGutter.foldingControlForeground": "#{{base05-hex}}", //5
+        // "editorCommentsWidget.resolvedBorder": "#{{base0B-hex}}", //B
+        // "editorCommentsWidget.unresolvedBorder": "#{{base08-hex}}", //8
+        // "editorCommentsWidget.rangeBackground": "#{{base01-hex}}", //1
+        // "editorCommentsWidget.rangeBorder": "#ff0000",
+        // "editorCommentsWidget.rangeActiveBackground": "#{{base02-hex}}", //2
+        // "editorCommentsWidget.rangeActiveBorder": "#ff0000",
 
         // Diff editor colors
         "diffEditor.insertedTextBackground": "#{{base0B-hex}}20",
@@ -276,6 +321,12 @@
         // "diffEditor.removedTextBorder": "#f00",
         // "diffEditor.border": "#f00",
         "diffEditor.diagonalFill": "#{{base02-hex}}", //2
+        // "diffEditor.insertedLineBackground": "#ff0000",
+        // "diffEditor.removedLineBackground": "#ff0000",
+        // "diffEditorGutter.insertedLineBackground": "#ff0000",
+        // "diffEditorGutter.removedLineBackground": "#ff0000",
+        // "diffEditorOverview.insertedForeground": "#ff0000",
+        // "diffEditorOverview.removedForeground": "#ff0000",
 
         // Editor widget colors
         "editorWidget.foreground": "#{{base05-hex}}", //5
@@ -285,18 +336,28 @@
         "editorSuggestWidget.background": "#{{base01-hex}}", //1
         // "editorSuggestWidget.border": "#f00",
         "editorSuggestWidget.foreground": "#{{base05-hex}}", //5
+        "editorSuggestWidget.focusHighlightForeground": "#{{base07-hex}}", //7
         "editorSuggestWidget.highlightForeground": "#{{base0D-hex}}", //D
         "editorSuggestWidget.selectedBackground": "#{{base02-hex}}", //2
+        "editorSuggestWidget.selectedForeground": "#{{base06-hex}}", //6
+        // "editorSuggestWidget.selectedIconForeground": "#ff0000",
+        // "editorSuggestWidgetStatus.foreground": "#ff0000",
         "editorHoverWidget.foreground": "#{{base05-hex}}", //5
         "editorHoverWidget.background": "#{{base00-hex}}", //1
         // "editorHoverWidget.border": "#f00",
+        // "editorHoverWidget.highlightForeground": "#ff0000",
         // "editorHoverWidget.statusBarBackground": "#f00",
+        // "editorGhostText.background": "#ff0000",
+        // "editorGhostText.foreground": "#ff0000",
         "debugExceptionWidget.background": "#{{base01-hex}}", //1
         // "debugExceptionWidget.border": "#f00",
         "editorMarkerNavigation.background": "#{{base01-hex}}", //1
         "editorMarkerNavigationError.background": "#{{base08-hex}}", //8
         "editorMarkerNavigationWarning.background": "#{{base0A-hex}}", //A
         "editorMarkerNavigationInfo.background": "#{{base0D-hex}}", //D
+        "editorMarkerNavigationError.headerBackground": "#{{base08-hex}}20", //8
+        "editorMarkerNavigationWarning.headerBackground": "#{{base0A-hex}}20", //A
+        "editorMarkerNavigationInfo.headerBackground": "#{{base0C-hex}}20", //C
 
         // Peek view colors
         // "peekView.border": "#f00",
@@ -325,12 +386,22 @@
         "editorOverviewRuler.currentContentForeground": "#{{base0D-hex}}", //D
         "editorOverviewRuler.incomingContentForeground": "#{{base0B-hex}}", //B
         "editorOverviewRuler.commonContentForeground": "#{{base0F-hex}}", //F
+        // "mergeEditor.change.background": "#ff0000",
+        // "mergeEditor.change.word.background": "#ff0000",
+        // "mergeEditor.conflict.unhandledUnfocused.border": "#ff0000",
+        // "mergeEditor.conflict.unhandledFocused.border": "#ff0000",
+        // "mergeEditor.conflict.handledUnfocused.border": "#ff0000",
+        // "mergeEditor.conflict.handledFocused.border": "#ff0000",
+        // "mergeEditor.conflict.handled.minimapOverViewRuler": "#ff0000",
+        // "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#ff0000",
 
         // Panel colors
         "panel.background": "#{{base00-hex}}", //0
         // "panel.border": "#f00",
+        // Below is no longer supported as of 1.47
         "panel.dropBackground": "#{{base01-hex}}6f", //1
-        // "panel.dropBorder": "#ff0000",
+        // Above is no longer supported as of 1.47
+        "panel.dropBorder": "#{{base01-hex}}6f", //1
         // "panelTitle.activeBorder": "#f00",
         "panelTitle.activeForeground": "#{{base05-hex}}", //5
         "panelTitle.inactiveForeground": "#{{base03-hex}}", //3
@@ -341,10 +412,7 @@
         // "panelSectionHeader.foreground": "#ff0000",
         // "panelSectionHeader.border": "#ff0000",
 
-        // Preview colors
-        // "imagePreview.border": "#f00",
-
-        // Status bar colors
+        // Status Bar colors
         "statusBar.background": "#{{base0D-hex}}", //D
         "statusBar.foreground": "#{{base07-hex}}", //7
         // "statusBar.border": "#f00",
@@ -363,8 +431,15 @@
         "statusBarItem.remoteForeground": "#{{base07-hex}}", //7
         "statusBarItem.errorBackground": "#{{base08-hex}}", //8
         "statusBarItem.errorForeground": "#{{base07-hex}}", //7
+        "statusBarItem.warningBackground": "#{{base0A-hex}}", //A
+        "statusBarItem.warningForeground": "#{{base07-hex}}", //7
+        // "statusBarItem.compactHoverBackground": "#ff0000",
+        // "statusBarItem.focusBorder": "#ff0000",
+        // "statusBarItem.settingsProfilesForeground": "#ff0000",
+        // "statusBarItem.settingsProfilesBackground": "#ff0000",
+        // "statusBar.focusBorder": "#ff0000",
 
-        // Title bar colors (macOS)
+        // Title Bar colors
         "titleBar.activeBackground": "#{{base00-hex}}", //0
         "titleBar.activeForeground": "#{{base05-hex}}", //5
         "titleBar.inactiveBackground": "#{{base01-hex}}", //1
@@ -383,7 +458,14 @@
         "menu.separatorBackground": "#{{base07-hex}}", //7
         // "menu.border": "#f00",
 
-        // Notification dialog colors
+        // Command Center colors
+        "commandCenter.foreground": "#{{base05-hex}}", //5
+        "commandCenter.activeForeground": "#{{base07-hex}}", //7
+        "commandCenter.background": "#{{base00-hex}}", //0
+        "commandCenter.activeBackground": "#{{base01-hex}}", //1
+        // "commandCenter.border": "#ff0000",
+
+        // Notification colors
         // "notificationCenter.border": "",
         "notificationCenterHeader.foreground": "#{{base05-hex}}", //5
         "notificationCenterHeader.background": "#{{base01-hex}}", //1
@@ -410,22 +492,45 @@
         "notification.errorForeground": "#{{base07-hex}}", //7
         // Above is no longer supported as of 1.21
 
+        // Banner colors
+        "banner.background": "#{{base02-hex}}", //2
+        "banner.foreground": "#{{base05-hex}}", //5
+        "banner.iconForeground": "#{{base0D-hex}}", //D
+
         // Extensions colors
         "extensionButton.prominentBackground": "#{{base0B-hex}}", //B
         "extensionButton.prominentForeground": "#{{base07-hex}}", //7
         "extensionButton.prominentHoverBackground": "#{{base02-hex}}", //2
         "extensionBadge.remoteBackground": "#{{base09-hex}}", //9
         "extensionBadge.remoteForeground": "#{{base07-hex}}", //7
+        "extensionIcon.starForeground": "#{{base0A-hex}}", //A
+        "extensionIcon.verifiedForeground": "#{{base0D-hex}}", //D
+        "extensionIcon.preReleaseForeground": "#{{base09-hex}}", //9
+        // "extensionIcon.sponsorForeground": "#ff0000",
 
         // Quick picker colors
         // "pickerGroup.border": "#f00",
         "pickerGroup.foreground": "#{{base03-hex}}", //3
         "quickInput.background": "#{{base01-hex}}", //1
         "quickInput.foreground": "#{{base05-hex}}", //5
+        "quickInputList.focusBackground": "#{{base03-hex}}", //3
+        "quickInputList.focusForeground": "#{{base07-hex}}", //7
+        "quickInputList.focusIconForeground": "#{{base07-hex}}", //7
         // "quickInputTitle.background": "#ff0000",
+
+        // Keybinding label colors
+        "keybindingLabel.background": "#{{base02-hex}}", //2
+        "keybindingLabel.foreground": "#{{base05-hex}}", //5
+        // "keybindingLabel.border": "#ff0000",
+        // "keybindingLabel.bottomBorder": "#ff0000",
+
+        // Keybinding shortcut table colors
+        "keybindingTable.headerBackground": "#{{base02-hex}}", //2
+        "keybindingTable.rowsBackground": "#{{base01-hex}}", //1
 
         // Integrated terminal colors
         "terminal.background": "#{{base00-hex}}", //0
+        // "terminal.border": "#ff0000",
         "terminal.foreground": "#{{base05-hex}}", //5
         "terminal.ansiBlack": "#{{base00-hex}}", //0
         "terminal.ansiRed": "#{{base08-hex}}", //8
@@ -444,14 +549,25 @@
         "terminal.ansiBrightCyan": "#{{base0C-hex}}", //C
         "terminal.ansiBrightWhite": "#{{base07-hex}}", //7
         // "terminal.selectionBackground": "#f0f",
+        // "terminal.selectionForeground": "#ff0000",
+        // "terminal.findMatchBackground": "#ff0000",
         // "terminalCursor.background": "#f0f",
         "terminalCursor.foreground": "#{{base05-hex}}", //5
-
+        // "terminal.dropBackground": "#ff0000",
+        // "terminal.tab.activeBorder": "#ff0000",
+        // "terminalCommandDecoration.defaultBackground": "#ff0000",
+        // "terminalCommandDecoration.successBackground": "#ff0000",
+        // "terminalCommandDecoration.errorBackground": "#ff0000",
+        "terminalOverviewRuler.cursorForeground": "#ff0000",
+        "terminalOverviewRuler.findMatchForeground": "#ff0000",
+        
         // Debug colors
         "debugToolBar.background": "#{{base01-hex}}", //1
         // "debugToolBar.border": "#f0f",
         // "editor.stackFrameHighlightBackground": "#f0f",
         // "editor.focusedStackFrameHighlightBackground": "#f0f",
+        // "editor.inlineValuesForeground": "#ff0000",
+        // "editor.inlineValuesBackground": "#ff0000",
         // "debugView.exceptionLabelForeground": "#ff0000",
         // "debugView.exceptionLabelBackground": "#ff0000",
         "debugView.stateLabelForeground": "#{{base07-hex}}", //7
@@ -462,12 +578,34 @@
         "debugTokenExpression.string": "#{{base0B-hex}}", //B
         "debugTokenExpression.boolean": "#{{base09-hex}}", //9
         "debugTokenExpression.number": "#{{base09-hex}}", //9
-        "debugTokenExpression.error": "#{{base08-hex}}",  //8
+        "debugTokenExpression.error": "#{{base08-hex}}", //8
+
+        // Testing colors
+        "testing.iconFailed": "#{{base08-hex}}", //8
+        "testing.iconErrored": "#{{base0F-hex}}", //F
+        "testing.iconPassed": "#{{base0B-hex}}", //B
+        "testing.runAction": "#{{base04-hex}}", //4
+        "testing.iconQueued": "#{{base0A-hex}}", //A
+        "testing.iconUnset": "#{{base04-hex}}", //4
+        "testing.iconSkipped": "#{{base0E-hex}}", //E
+        // "testing.peekBorder": "#ff0000",
+        "testing.peekHeaderBackground": "#{{base01-hex}}", //1
+        "testing.message.error.decorationForeground": "#{{base05-hex}}", //5
+        "testing.message.error.lineBackground": "#{{base08-hex}}20", //8
+        "testing.message.info.decorationForeground": "#{{base05-hex}}", //5
+        "testing.message.info.lineBackground": "#{{base0D-hex}}20", //D
 
         // Welcome page colors
         "welcomePage.background": "#{{base00-hex}}", //0
+        // Below is no longer supported as of 1.63
         "welcomePage.buttonBackground": "#{{base01-hex}}", //1
         "welcomePage.buttonHoverBackground": "#{{base02-hex}}", //2
+        // Above is no longer supported as of 1.63
+        "welcomePage.progress.background": "#{{base03-hex}}", //3
+        "welcomePage.progress.foreground": "#{{base0D-hex}}", //D
+        "welcomePage.tileBackground": "#{{base01-hex}}", //1
+        "welcomePage.tileHoverBackground": "#{{base02-hex}}", //2
+        // "welcomePage.tileShadow": "#ff0000",
         "walkThrough.embeddedEditorBackground": "#{{base00-hex}}", //0
 
         // Source Control colors
@@ -476,19 +614,20 @@
         // Git colors
         "gitDecoration.addedResourceForeground": "#{{base0B-hex}}", //B
         "gitDecoration.modifiedResourceForeground": "#{{base0E-hex}}", //E
-        "gitDecoration.stageModifiedResourceForeground": "#{{base0E-hex}}", //E
         "gitDecoration.deletedResourceForeground": "#{{base08-hex}}", //8
+        "gitDecoration.renamedResourceForeground": "#{{base0C-hex}}", //C
+        "gitDecoration.stageModifiedResourceForeground": "#{{base0E-hex}}", //E
         "gitDecoration.stageDeletedResourceForeground": "#{{base08-hex}}", //8
         "gitDecoration.untrackedResourceForeground": "#{{base09-hex}}", //9
         "gitDecoration.ignoredResourceForeground": "#{{base03-hex}}", //3
         "gitDecoration.conflictingResourceForeground": "#{{base0A-hex}}", //A
         "gitDecoration.submoduleResourceForeground": "#{{base0F-hex}}", //F
 
-        // Settings editor colors
+        // Settings Editor colors
         "settings.headerForeground": "#{{base05-hex}}", //5
         "settings.modifiedItemIndicator": "#{{base0D-hex}}", //D
         // Below was introduced temporarily in 1.26
-        "settings.modifiedItemForeground": "#{{base0D-hex}}", //D
+        "settings.modifiedItemForeground": "#{{base0B-hex}}", //B
         // Above was introduced temporarily in 1.26
         "settings.dropdownBackground": "#{{base01-hex}}", //1
         "settings.dropdownForeground": "#{{base05-hex}}", //5
@@ -497,14 +636,17 @@
         "settings.checkboxBackground": "#{{base01-hex}}", //1
         "settings.checkboxForeground": "#{{base05-hex}}", //5
         // "settings.checkboxBorder": "",
+        "settings.rowHoverBackground": "#{{base02-hex}}", //2
         "settings.textInputBackground": "#{{base01-hex}}", //1
         "settings.textInputForeground": "#{{base05-hex}}", //5
         // "settings.textInputBorder": "",
         "settings.numberInputBackground": "#{{base01-hex}}", //1
         "settings.numberInputForeground": "#{{base05-hex}}", //5
         // "settings.numberInputBorder": "",
-        // "settings.inactiveSelectedItemBorder": "",
         "settings.focusedRowBackground": "#{{base02-hex}}", //2
+        // "settings.focusedRowBorder": "#ff0000",
+        "settings.headerBorder": "#{{base05-hex}}", //5
+        "settings.sashBorder": "#{{base05-hex}}", //5
 
         // Breadcrumbs colors
         "breadcrumb.foreground": "#{{base05-hex}}", //5
@@ -577,25 +719,29 @@
         "debugConsoleInputIcon.foreground": "#{{base05-hex}}", //5
 
         // Notebook colors
-        // "notebook.cellBorderColor": "#ff0000",
-        // "notebook.focusedEditorBorder": "#ff0000",
-        // "notebookStatusSuccessIcon.foreground": "#ff0000",
-        // "notebookStatusErrorIcon.foreground": "#ff0000",
-        // "notebookStatusRunningIcon.foreground": "#ff0000",
-        // "notebook.outputContainerBackgroundColor": "#ff0000",
-        // "notebook.cellToolbarSeparator": "#ff0000",
-        // "notebook.focusedCellBackground": "#ff0000",
-        // "notebook.cellHoverBackground": "#ff0000",
-        // "notebook.focusedCellBorder": "#ff0000",
-        // "notebook.selectedCellBorder": "#ff0000",
-        // "notebook.cellStatusBarItemHoverBackground": "#ff0000",
+        "notebook.editorBackground": "#{{base00-hex}}", //0
+        "notebook.cellBorderColor": "#{{base03-hex}}", //3
+        "notebook.cellHoverBackground": "#{{base01-hex}}", //1
         // "notebook.cellInsertionIndicator": "#ff0000",
+        // "notebook.cellStatusBarItemHoverBackground": "#ff0000",
+        "notebook.cellToolbarSeparator": "#{{base02-hex}}", //2
+        "notebook.cellEditorBackground": "#{{base00-hex}}", //0
+        "notebook.focusedCellBackground": "#{{base02-hex}}", //2
+        "notebook.focusedCellBorder": "#{{base0D-hex}}", //D
+        "notebook.focusedEditorBorder": "#{{base0D-hex}}", //D
+        "notebook.inactiveFocusedCellBorder": "#{{base03-hex}}", //3
+        // "notebook.inactiveSelectedCellBorder": "#ff0000",
+        // "notebook.outputContainerBackgroundColor": "#ff0000",
+        // "notebook.outputContainerBorderColor": "#ff0000",
+        "notebook.selectedCellBackground": "#{{base02-hex}}", //2
+        // "notebook.selectedCellBorder": "#ff0000",
+        // "notebook.symbolHighlightBackground": "#ff0000",
+        // "notebookScrollbarSlider.activeBackground": "#ff0000",
         // "notebookScrollbarSlider.background": "#ff0000",
         // "notebookScrollbarSlider.hoverBackground": "#ff0000",
-        // "notebookScrollbarSlider.activeBackground": "#ff0000",
-        // "notebook.symbolHighlightBackground": "#ff0000",
-        "notebook.rowHoverBackground": "#{{base01-hex}}", //1 // also used in "Settings Editor colors"
-        // "notebook.focusedRowBorder": "#ff0000", // also used in "Settings Editor colors"
+        "notebookStatusErrorIcon.foreground": "#{{base08-hex}}", //8
+        "notebookStatusRunningIcon.foreground": "#{{base0C-hex}}", //C
+        "notebookStatusSuccessIcon.foreground": "#{{base0B-hex}}", //B
 
         // Chart colors
         "charts.foreground": "#{{base05-hex}}", //5
@@ -605,7 +751,10 @@
         "charts.yellow": "#{{base0A-hex}}", //A
         "charts.orange": "#{{base09-hex}}", //9
         "charts.green": "#{{base0B-hex}}", //B
-        "charts.purple": "#{{base0E-hex}}" //E
+        "charts.purple": "#{{base0E-hex}}", //E
+
+        // Ports Colors
+        "ports.iconRunningProcessForeground": "#{{base09-hex}}" //9
     },
     "tokenColors": [
         {
