@@ -1,6 +1,6 @@
 # Base16 for Visual Studio Code
 
-See the [Base16 Project repository](https://github.com/base16-project/home) for more info.
+See the [tinted-theming repository](https://github.com/tinted-theming/home) for more info.
 
 ## Installation
 
