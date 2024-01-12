@@ -1,0 +1,1315 @@
+{
+  "name": "base16-theme-switcher",
+  "displayName": "Base16 Theme Switcher",
+  "description": "Switch to any base16 theme",
+  "version": "0.0.1",
+  "repository": "https://github.com/tinted-theming/base16-theme-switcher",
+  "publisher": "TintedTheming",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "base16",
+    "color"
+  ],
+  "scripts": {
+    "update:packagejson:themes": "bash ./scripts/updateWithLatestThemes"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.56.0",
+    "git-clone": "^0.2.0",
+    "jsonc-parser": "^3.2.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "base16-3024",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-3024.json"
+      },
+      {
+        "label": "base16-apathy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-apathy.json"
+      },
+      {
+        "label": "base16-apprentice",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-apprentice.json"
+      },
+      {
+        "label": "base16-ashes",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-ashes.json"
+      },
+      {
+        "label": "base16-atelier-cave-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-atelier-cave-light.json"
+      },
+      {
+        "label": "base16-atelier-cave",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-atelier-cave.json"
+      },
+      {
+        "label": "base16-atelier-dune-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-atelier-dune-light.json"
+      },
+      {
+        "label": "base16-atelier-dune",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-atelier-dune.json"
+      },
+      {
+        "label": "base16-atelier-estuary-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-atelier-estuary-light.json"
+      },
+      {
+        "label": "base16-atelier-estuary",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-atelier-estuary.json"
+      },
+      {
+        "label": "base16-atelier-forest-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-atelier-forest-light.json"
+      },
+      {
+        "label": "base16-atelier-forest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-atelier-forest.json"
+      },
+      {
+        "label": "base16-atelier-heath-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-atelier-heath-light.json"
+      },
+      {
+        "label": "base16-atelier-heath",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-atelier-heath.json"
+      },
+      {
+        "label": "base16-atelier-lakeside-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-atelier-lakeside-light.json"
+      },
+      {
+        "label": "base16-atelier-lakeside",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-atelier-lakeside.json"
+      },
+      {
+        "label": "base16-atelier-plateau-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-atelier-plateau-light.json"
+      },
+      {
+        "label": "base16-atelier-plateau",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-atelier-plateau.json"
+      },
+      {
+        "label": "base16-atelier-savanna-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-atelier-savanna-light.json"
+      },
+      {
+        "label": "base16-atelier-savanna",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-atelier-savanna.json"
+      },
+      {
+        "label": "base16-atelier-seaside-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-atelier-seaside-light.json"
+      },
+      {
+        "label": "base16-atelier-seaside",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-atelier-seaside.json"
+      },
+      {
+        "label": "base16-atelier-sulphurpool-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-atelier-sulphurpool-light.json"
+      },
+      {
+        "label": "base16-atelier-sulphurpool",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-atelier-sulphurpool.json"
+      },
+      {
+        "label": "base16-atlas",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-atlas.json"
+      },
+      {
+        "label": "base16-ayu-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-ayu-dark.json"
+      },
+      {
+        "label": "base16-ayu-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-ayu-light.json"
+      },
+      {
+        "label": "base16-ayu-mirage",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-ayu-mirage.json"
+      },
+      {
+        "label": "base16-bespin",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-bespin.json"
+      },
+      {
+        "label": "base16-black-metal-bathory",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-black-metal-bathory.json"
+      },
+      {
+        "label": "base16-black-metal-burzum",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-black-metal-burzum.json"
+      },
+      {
+        "label": "base16-black-metal-dark-funeral",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-black-metal-dark-funeral.json"
+      },
+      {
+        "label": "base16-black-metal-gorgoroth",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-black-metal-gorgoroth.json"
+      },
+      {
+        "label": "base16-black-metal-immortal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-black-metal-immortal.json"
+      },
+      {
+        "label": "base16-black-metal-khold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-black-metal-khold.json"
+      },
+      {
+        "label": "base16-black-metal-marduk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-black-metal-marduk.json"
+      },
+      {
+        "label": "base16-black-metal-mayhem",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-black-metal-mayhem.json"
+      },
+      {
+        "label": "base16-black-metal-nile",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-black-metal-nile.json"
+      },
+      {
+        "label": "base16-black-metal-venom",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-black-metal-venom.json"
+      },
+      {
+        "label": "base16-black-metal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-black-metal.json"
+      },
+      {
+        "label": "base16-blueforest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-blueforest.json"
+      },
+      {
+        "label": "base16-blueish",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-blueish.json"
+      },
+      {
+        "label": "base16-brewer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-brewer.json"
+      },
+      {
+        "label": "base16-bright",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-bright.json"
+      },
+      {
+        "label": "base16-brogrammer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-brogrammer.json"
+      },
+      {
+        "label": "base16-brushtrees-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-brushtrees-dark.json"
+      },
+      {
+        "label": "base16-brushtrees",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-brushtrees.json"
+      },
+      {
+        "label": "base16-caroline",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-caroline.json"
+      },
+      {
+        "label": "base16-catppuccin-frappe",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-catppuccin-frappe.json"
+      },
+      {
+        "label": "base16-catppuccin-latte",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-catppuccin-latte.json"
+      },
+      {
+        "label": "base16-catppuccin-macchiato",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-catppuccin-macchiato.json"
+      },
+      {
+        "label": "base16-catppuccin-mocha",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-catppuccin-mocha.json"
+      },
+      {
+        "label": "base16-chalk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-chalk.json"
+      },
+      {
+        "label": "base16-circus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-circus.json"
+      },
+      {
+        "label": "base16-classic-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-classic-dark.json"
+      },
+      {
+        "label": "base16-classic-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-classic-light.json"
+      },
+      {
+        "label": "base16-codeschool",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-codeschool.json"
+      },
+      {
+        "label": "base16-colors",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-colors.json"
+      },
+      {
+        "label": "base16-cupcake",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-cupcake.json"
+      },
+      {
+        "label": "base16-cupertino",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-cupertino.json"
+      },
+      {
+        "label": "base16-da-one-black",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-da-one-black.json"
+      },
+      {
+        "label": "base16-da-one-gray",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-da-one-gray.json"
+      },
+      {
+        "label": "base16-da-one-ocean",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-da-one-ocean.json"
+      },
+      {
+        "label": "base16-da-one-paper",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-da-one-paper.json"
+      },
+      {
+        "label": "base16-da-one-sea",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-da-one-sea.json"
+      },
+      {
+        "label": "base16-da-one-white",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-da-one-white.json"
+      },
+      {
+        "label": "base16-danqing-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-danqing-light.json"
+      },
+      {
+        "label": "base16-danqing",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-danqing.json"
+      },
+      {
+        "label": "base16-darcula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-darcula.json"
+      },
+      {
+        "label": "base16-darkmoss",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-darkmoss.json"
+      },
+      {
+        "label": "base16-darktooth",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-darktooth.json"
+      },
+      {
+        "label": "base16-darkviolet",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-darkviolet.json"
+      },
+      {
+        "label": "base16-decaf",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-decaf.json"
+      },
+      {
+        "label": "base16-default-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-default-dark.json"
+      },
+      {
+        "label": "base16-default-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-default-light.json"
+      },
+      {
+        "label": "base16-dirtysea",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-dirtysea.json"
+      },
+      {
+        "label": "base16-dracula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-dracula.json"
+      },
+      {
+        "label": "base16-edge-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-edge-dark.json"
+      },
+      {
+        "label": "base16-edge-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-edge-light.json"
+      },
+      {
+        "label": "base16-eighties",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-eighties.json"
+      },
+      {
+        "label": "base16-embers-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-embers-light.json"
+      },
+      {
+        "label": "base16-embers",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-embers.json"
+      },
+      {
+        "label": "base16-emil",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-emil.json"
+      },
+      {
+        "label": "base16-equilibrium-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-equilibrium-dark.json"
+      },
+      {
+        "label": "base16-equilibrium-gray-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-equilibrium-gray-dark.json"
+      },
+      {
+        "label": "base16-equilibrium-gray-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-equilibrium-gray-light.json"
+      },
+      {
+        "label": "base16-equilibrium-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-equilibrium-light.json"
+      },
+      {
+        "label": "base16-eris",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-eris.json"
+      },
+      {
+        "label": "base16-espresso",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-espresso.json"
+      },
+      {
+        "label": "base16-eva-dim",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-eva-dim.json"
+      },
+      {
+        "label": "base16-eva",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-eva.json"
+      },
+      {
+        "label": "base16-evenok-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-evenok-dark.json"
+      },
+      {
+        "label": "base16-everforest-dark-hard",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-everforest-dark-hard.json"
+      },
+      {
+        "label": "base16-everforest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-everforest.json"
+      },
+      {
+        "label": "base16-flat",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-flat.json"
+      },
+      {
+        "label": "base16-framer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-framer.json"
+      },
+      {
+        "label": "base16-fruit-soda",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-fruit-soda.json"
+      },
+      {
+        "label": "base16-gigavolt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-gigavolt.json"
+      },
+      {
+        "label": "base16-github",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-github.json"
+      },
+      {
+        "label": "base16-google-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-google-dark.json"
+      },
+      {
+        "label": "base16-google-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-google-light.json"
+      },
+      {
+        "label": "base16-gotham",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-gotham.json"
+      },
+      {
+        "label": "base16-grayscale-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-grayscale-dark.json"
+      },
+      {
+        "label": "base16-grayscale-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-grayscale-light.json"
+      },
+      {
+        "label": "base16-greenscreen",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-greenscreen.json"
+      },
+      {
+        "label": "base16-gruber",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-gruber.json"
+      },
+      {
+        "label": "base16-gruvbox-dark-hard",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-gruvbox-dark-hard.json"
+      },
+      {
+        "label": "base16-gruvbox-dark-medium",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-gruvbox-dark-medium.json"
+      },
+      {
+        "label": "base16-gruvbox-dark-pale",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-gruvbox-dark-pale.json"
+      },
+      {
+        "label": "base16-gruvbox-dark-soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-gruvbox-dark-soft.json"
+      },
+      {
+        "label": "base16-gruvbox-light-hard",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-gruvbox-light-hard.json"
+      },
+      {
+        "label": "base16-gruvbox-light-medium",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-gruvbox-light-medium.json"
+      },
+      {
+        "label": "base16-gruvbox-light-soft",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-gruvbox-light-soft.json"
+      },
+      {
+        "label": "base16-gruvbox-material-dark-hard",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-gruvbox-material-dark-hard.json"
+      },
+      {
+        "label": "base16-gruvbox-material-dark-medium",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-gruvbox-material-dark-medium.json"
+      },
+      {
+        "label": "base16-gruvbox-material-dark-soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-gruvbox-material-dark-soft.json"
+      },
+      {
+        "label": "base16-gruvbox-material-light-hard",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-gruvbox-material-light-hard.json"
+      },
+      {
+        "label": "base16-gruvbox-material-light-medium",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-gruvbox-material-light-medium.json"
+      },
+      {
+        "label": "base16-gruvbox-material-light-soft",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-gruvbox-material-light-soft.json"
+      },
+      {
+        "label": "base16-hardcore",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-hardcore.json"
+      },
+      {
+        "label": "base16-harmonic16-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-harmonic16-dark.json"
+      },
+      {
+        "label": "base16-harmonic16-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-harmonic16-light.json"
+      },
+      {
+        "label": "base16-heetch-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-heetch-light.json"
+      },
+      {
+        "label": "base16-heetch",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-heetch.json"
+      },
+      {
+        "label": "base16-helios",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-helios.json"
+      },
+      {
+        "label": "base16-hopscotch",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-hopscotch.json"
+      },
+      {
+        "label": "base16-horizon-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-horizon-dark.json"
+      },
+      {
+        "label": "base16-horizon-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-horizon-light.json"
+      },
+      {
+        "label": "base16-horizon-terminal-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-horizon-terminal-dark.json"
+      },
+      {
+        "label": "base16-horizon-terminal-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-horizon-terminal-light.json"
+      },
+      {
+        "label": "base16-humanoid-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-humanoid-dark.json"
+      },
+      {
+        "label": "base16-humanoid-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-humanoid-light.json"
+      },
+      {
+        "label": "base16-ia-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-ia-dark.json"
+      },
+      {
+        "label": "base16-ia-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-ia-light.json"
+      },
+      {
+        "label": "base16-icy",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-icy.json"
+      },
+      {
+        "label": "base16-irblack",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-irblack.json"
+      },
+      {
+        "label": "base16-isotope",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-isotope.json"
+      },
+      {
+        "label": "base16-jabuti",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-jabuti.json"
+      },
+      {
+        "label": "base16-kanagawa",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-kanagawa.json"
+      },
+      {
+        "label": "base16-katy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-katy.json"
+      },
+      {
+        "label": "base16-kimber",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-kimber.json"
+      },
+      {
+        "label": "base16-lime",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-lime.json"
+      },
+      {
+        "label": "base16-macintosh",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-macintosh.json"
+      },
+      {
+        "label": "base16-marrakesh",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-marrakesh.json"
+      },
+      {
+        "label": "base16-materia",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-materia.json"
+      },
+      {
+        "label": "base16-material-darker",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-material-darker.json"
+      },
+      {
+        "label": "base16-material-lighter",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-material-lighter.json"
+      },
+      {
+        "label": "base16-material-palenight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-material-palenight.json"
+      },
+      {
+        "label": "base16-material-vivid",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-material-vivid.json"
+      },
+      {
+        "label": "base16-material",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-material.json"
+      },
+      {
+        "label": "base16-mellow-purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-mellow-purple.json"
+      },
+      {
+        "label": "base16-mexico-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-mexico-light.json"
+      },
+      {
+        "label": "base16-mocha",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-mocha.json"
+      },
+      {
+        "label": "base16-monokai",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-monokai.json"
+      },
+      {
+        "label": "base16-mountain",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-mountain.json"
+      },
+      {
+        "label": "base16-nebula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-nebula.json"
+      },
+      {
+        "label": "base16-nord-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-nord-light.json"
+      },
+      {
+        "label": "base16-nord",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-nord.json"
+      },
+      {
+        "label": "base16-nova",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-nova.json"
+      },
+      {
+        "label": "base16-ocean",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-ocean.json"
+      },
+      {
+        "label": "base16-oceanicnext",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-oceanicnext.json"
+      },
+      {
+        "label": "base16-one-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-one-light.json"
+      },
+      {
+        "label": "base16-onedark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-onedark.json"
+      },
+      {
+        "label": "base16-outrun-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-outrun-dark.json"
+      },
+      {
+        "label": "base16-oxocarbon-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-oxocarbon-dark.json"
+      },
+      {
+        "label": "base16-oxocarbon-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-oxocarbon-light.json"
+      },
+      {
+        "label": "base16-pandora",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-pandora.json"
+      },
+      {
+        "label": "base16-papercolor-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-papercolor-dark.json"
+      },
+      {
+        "label": "base16-papercolor-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-papercolor-light.json"
+      },
+      {
+        "label": "base16-paraiso",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-paraiso.json"
+      },
+      {
+        "label": "base16-pasque",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-pasque.json"
+      },
+      {
+        "label": "base16-phd",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-phd.json"
+      },
+      {
+        "label": "base16-pico",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-pico.json"
+      },
+      {
+        "label": "base16-pinky",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-pinky.json"
+      },
+      {
+        "label": "base16-pop",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-pop.json"
+      },
+      {
+        "label": "base16-porple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-porple.json"
+      },
+      {
+        "label": "base16-primer-dark-dimmed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-primer-dark-dimmed.json"
+      },
+      {
+        "label": "base16-primer-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-primer-dark.json"
+      },
+      {
+        "label": "base16-primer-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-primer-light.json"
+      },
+      {
+        "label": "base16-purpledream",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-purpledream.json"
+      },
+      {
+        "label": "base16-qualia",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-qualia.json"
+      },
+      {
+        "label": "base16-railscasts",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-railscasts.json"
+      },
+      {
+        "label": "base16-rebecca",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-rebecca.json"
+      },
+      {
+        "label": "base16-rose-pine-dawn",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-rose-pine-dawn.json"
+      },
+      {
+        "label": "base16-rose-pine-moon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-rose-pine-moon.json"
+      },
+      {
+        "label": "base16-rose-pine",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-rose-pine.json"
+      },
+      {
+        "label": "base16-sagelight",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-sagelight.json"
+      },
+      {
+        "label": "base16-sakura",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-sakura.json"
+      },
+      {
+        "label": "base16-sandcastle",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-sandcastle.json"
+      },
+      {
+        "label": "base16-selenized-black",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-selenized-black.json"
+      },
+      {
+        "label": "base16-selenized-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-selenized-dark.json"
+      },
+      {
+        "label": "base16-selenized-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-selenized-light.json"
+      },
+      {
+        "label": "base16-selenized-white",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-selenized-white.json"
+      },
+      {
+        "label": "base16-seti",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-seti.json"
+      },
+      {
+        "label": "base16-shades-of-purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-shades-of-purple.json"
+      },
+      {
+        "label": "base16-shadesmear-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-shadesmear-dark.json"
+      },
+      {
+        "label": "base16-shadesmear-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-shadesmear-light.json"
+      },
+      {
+        "label": "base16-shapeshifter",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-shapeshifter.json"
+      },
+      {
+        "label": "base16-silk-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-silk-dark.json"
+      },
+      {
+        "label": "base16-silk-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-silk-light.json"
+      },
+      {
+        "label": "base16-snazzy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-snazzy.json"
+      },
+      {
+        "label": "base16-solarflare-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-solarflare-light.json"
+      },
+      {
+        "label": "base16-solarflare",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-solarflare.json"
+      },
+      {
+        "label": "base16-solarized-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-solarized-dark.json"
+      },
+      {
+        "label": "base16-solarized-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-solarized-light.json"
+      },
+      {
+        "label": "base16-spaceduck",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-spaceduck.json"
+      },
+      {
+        "label": "base16-spacemacs",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-spacemacs.json"
+      },
+      {
+        "label": "base16-standardized-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-standardized-dark.json"
+      },
+      {
+        "label": "base16-standardized-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-standardized-light.json"
+      },
+      {
+        "label": "base16-stella",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-stella.json"
+      },
+      {
+        "label": "base16-still-alive",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-still-alive.json"
+      },
+      {
+        "label": "base16-summercamp",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-summercamp.json"
+      },
+      {
+        "label": "base16-summerfruit-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-summerfruit-dark.json"
+      },
+      {
+        "label": "base16-summerfruit-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-summerfruit-light.json"
+      },
+      {
+        "label": "base16-synth-midnight-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-synth-midnight-dark.json"
+      },
+      {
+        "label": "base16-synth-midnight-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-synth-midnight-light.json"
+      },
+      {
+        "label": "base16-tango",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tango.json"
+      },
+      {
+        "label": "base16-tarot",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tarot.json"
+      },
+      {
+        "label": "base16-tender",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tender.json"
+      },
+      {
+        "label": "base16-tokyo-city-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tokyo-city-dark.json"
+      },
+      {
+        "label": "base16-tokyo-city-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-tokyo-city-light.json"
+      },
+      {
+        "label": "base16-tokyo-city-terminal-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tokyo-city-terminal-dark.json"
+      },
+      {
+        "label": "base16-tokyo-city-terminal-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-tokyo-city-terminal-light.json"
+      },
+      {
+        "label": "base16-tokyo-night-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tokyo-night-dark.json"
+      },
+      {
+        "label": "base16-tokyo-night-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-tokyo-night-light.json"
+      },
+      {
+        "label": "base16-tokyo-night-storm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tokyo-night-storm.json"
+      },
+      {
+        "label": "base16-tokyo-night-terminal-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tokyo-night-terminal-dark.json"
+      },
+      {
+        "label": "base16-tokyo-night-terminal-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-tokyo-night-terminal-light.json"
+      },
+      {
+        "label": "base16-tokyo-night-terminal-storm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tokyo-night-terminal-storm.json"
+      },
+      {
+        "label": "base16-tokyodark-terminal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tokyodark-terminal.json"
+      },
+      {
+        "label": "base16-tokyodark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tokyodark.json"
+      },
+      {
+        "label": "base16-tomorrow-night-eighties",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tomorrow-night-eighties.json"
+      },
+      {
+        "label": "base16-tomorrow-night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tomorrow-night.json"
+      },
+      {
+        "label": "base16-tomorrow",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-tomorrow.json"
+      },
+      {
+        "label": "base16-tube",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-tube.json"
+      },
+      {
+        "label": "base16-twilight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-twilight.json"
+      },
+      {
+        "label": "base16-unikitty-dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-unikitty-dark.json"
+      },
+      {
+        "label": "base16-unikitty-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-unikitty-light.json"
+      },
+      {
+        "label": "base16-unikitty-reversible",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-unikitty-reversible.json"
+      },
+      {
+        "label": "base16-uwunicorn",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-uwunicorn.json"
+      },
+      {
+        "label": "base16-vice",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-vice.json"
+      },
+      {
+        "label": "base16-vulcan",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-vulcan.json"
+      },
+      {
+        "label": "base16-windows-10-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-windows-10-light.json"
+      },
+      {
+        "label": "base16-windows-10",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-windows-10.json"
+      },
+      {
+        "label": "base16-windows-95-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-windows-95-light.json"
+      },
+      {
+        "label": "base16-windows-95",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-windows-95.json"
+      },
+      {
+        "label": "base16-windows-highcontrast-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-windows-highcontrast-light.json"
+      },
+      {
+        "label": "base16-windows-highcontrast",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-windows-highcontrast.json"
+      },
+      {
+        "label": "base16-windows-nt-light",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16-windows-nt-light.json"
+      },
+      {
+        "label": "base16-windows-nt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-windows-nt.json"
+      },
+      {
+        "label": "base16-woodland",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-woodland.json"
+      },
+      {
+        "label": "base16-xcode-dusk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-xcode-dusk.json"
+      },
+      {
+        "label": "base16-zenbones",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-zenbones.json"
+      },
+      {
+        "label": "base16-zenburn",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-zenburn.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "@types/git-clone": "^0.2.3",
+    "rimraf": "^5.0.5"
+  }
+}
