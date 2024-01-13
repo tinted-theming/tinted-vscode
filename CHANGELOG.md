@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to the "base16-theme-switcher" extension will be documented in this file.
+All notable changes to the "base16-tinted-themes" VSCode extension will be documented in this file.
 
 ## 0.1.1
 - Fix `repository` `package.json` url
