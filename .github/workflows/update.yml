@@ -1,4 +1,4 @@
-name: Update with the latest colorschemes
+name: Update with latest themes and publish to marketplace
 on:
   workflow_dispatch:
   schedule:
@@ -14,8 +14,24 @@ jobs:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
       - name: Update schemes
         uses: tinted-theming/base16-builder-go@latest
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: yarn
+
+      - name: Install dependencies
+        run: |
+          yarn install
+
+      - name: Run update script
+        run: |
+          node scripts/updateWithLatestThemes.js
+
       - name: Commit the changes, if any
-        uses: stefanzweifel/git-auto-commit-action@v4
+        id: auto-commit-action
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update with the latest colorschemes
           branch: ${{ github.head_ref }}
@@ -23,3 +39,10 @@ jobs:
           commit_user_email: tintedtheming@proton.me
           commit_author: tinted-theming-bot <tintedtheming@proton.me>
 
+      - name: Publish to VSCode Marketplace
+        uses: lannonbr/vsce-action@3.0.0
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        with:
+          args: "publish -p $VSCE_TOKEN"
+        env:
+          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
