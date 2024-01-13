@@ -29,9 +29,13 @@ jobs:
         run: |
           yarn lint
 
-      - name: Run update script
+      - name: Update package.json themes
         run: |
           yarn update:packagejson:themes
+
+      - name: Version bump
+        run: |
+          yarn update:packagejson:version
 
       - name: Commit the changes, if any
         id: auto-commit-action
@@ -42,11 +46,6 @@ jobs:
           commit_user_name: tinted-theming-bot
           commit_user_email: tintedtheming@proton.me
           commit_author: tinted-theming-bot <tintedtheming@proton.me>
-
-      - name: Version bump if changes were comitted
-        if: steps.auto-commit-action.outputs.changes_detected == 'true'
-        run: |
-          yarn version --minor
 
       - name: Publish to VSCode Marketplace
         uses: lannonbr/vsce-action@3.0.0
