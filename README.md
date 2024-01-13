@@ -4,9 +4,12 @@ This VSCode extension adds all Base16 themes to your VSCode theme list.
 You can have a look at the [Base16 Gallery] to preview the available
 themes. Look at [Tinted Theming] for more information.
 
+Themes in `./themes` directory are copied from [base16-vscode].
+
 ## Installation
 
-1. Go to your Extensions view in VSCode (typicall `CTRL + SHIFT + x`)
+1. Go to your Extensions view in VSCode File -> Preferences ->
+   Extensions or `CTRL + SHIFT + x`
 2. Search for `Base16 Theme Switcher` and install
 
 ## Usage
@@ -18,3 +21,4 @@ themes. Look at [Tinted Theming] for more information.
 
 [Base16 Gallery]: https://tinted-theming.github.io/base16-gallery/
 [Tinted Theming]: https://github.com/tinted-theming/home
+[base16-vscode]: https://github.com/tinted-theming/base16-vscode
