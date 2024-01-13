@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /*
  * This script creates the necessary entries in package.json based on
  * the themes in ./themes directory

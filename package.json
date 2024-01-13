@@ -17,7 +17,7 @@
     "color"
   ],
   "scripts": {
-    "update:packagejson:themes": "bash ./scripts/updateWithLatestThemes"
+    "update:packagejson:themes": "node ./scripts/updateWithLatestThemes.js"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.6",
