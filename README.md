@@ -1,6 +1,6 @@
 # Base16 for Visual Studio Code
 
-This VSCode extension adds all Base16 themes to your VSCode theme list.
+This [VSCode extension] adds all Base16 themes to your VSCode theme list.
 You can have a look at the [Base16 Gallery] to preview the available
 themes. Look at [Tinted Theming] for more information.
 
@@ -19,6 +19,7 @@ Themes in `./themes` directory are copied from [base16-vscode].
   -> Themes -> Color Theme
 2. Filter and select the theme you want to use.
 
+[VSCode extension]: https://marketplace.visualstudio.com/items?itemName=TintedTheming.base16-tinted-themes
 [Base16 Gallery]: https://tinted-theming.github.io/base16-gallery/
 [Tinted Theming]: https://github.com/tinted-theming/home
 [base16-vscode]: https://github.com/tinted-theming/base16-vscode
