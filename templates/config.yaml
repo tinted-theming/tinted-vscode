@@ -1,3 +1,8 @@
-default:
+base16:
   extension: .json
-  output: themes
+  output: themes/base16
+
+base24:
+  extension: .json
+  output: themes/base24
+  supported-systems: [base24]
