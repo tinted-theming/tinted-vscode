@@ -13,7 +13,7 @@ jobs:
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
       - name: Update schemes
-        uses: tinted-theming/base16-builder-go@latest
+        uses: tinted-theming/tinted-builder-rust@latest
 
       - name: Setup Node
         uses: actions/setup-node@v3
