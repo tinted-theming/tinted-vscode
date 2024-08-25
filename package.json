@@ -2,7 +2,7 @@
   "name": "base16-tinted-themes",
   "displayName": "Tinted VSCode",
   "description": "Choose from over 250 Tinted Themes",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "repository": "https://github.com/tinted-theming/tinted-vscode",
   "publisher": "TintedTheming",
   "icon": "assets/tinted-theming-logo.png",
@@ -29,12 +29,12 @@
     "update:packagejson:version": "node ./scripts/minorVersionBump.js"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
-    "@typescript-eslint/parser": "^6.18.1",
-    "eslint": "^8.56.0",
-    "jsonc-parser": "^3.2.0",
-    "rimraf": "^5.0.5",
-    "typescript": "^5.3.3"
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "eslint": "^9.9.1",
+    "jsonc-parser": "^3.3.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.2.0"
   },
   "contributes": {
     "themes": [
