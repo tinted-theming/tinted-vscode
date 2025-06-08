@@ -2,7 +2,7 @@
   "name": "base16-tinted-themes",
   "displayName": "Tinted VSCode",
   "description": "Choose from over 250 Tinted Themes",
-  "version": "0.22.0",
+  "version": "0.23.0",
   "repository": "https://github.com/tinted-theming/tinted-vscode",
   "publisher": "TintedTheming",
   "icon": "assets/tinted-theming-logo.png",
@@ -38,6 +38,11 @@
   },
   "contributes": {
     "themes": [
+      {
+        "label": "base16-0x96f",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-0x96f.json"
+      },
       {
         "label": "base16-3024",
         "uiTheme": "vs-dark",
@@ -307,6 +312,16 @@
         "label": "base16-chalk",
         "uiTheme": "vs-dark",
         "path": "./themes/base16/base16-chalk.json"
+      },
+      {
+        "label": "base16-chicago-day",
+        "uiTheme": "hc-light",
+        "path": "./themes/base16/base16-chicago-day.json"
+      },
+      {
+        "label": "base16-chicago-night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16/base16-chicago-night.json"
       },
       {
         "label": "base16-circus",
@@ -1424,6 +1439,11 @@
         "path": "./themes/base16/base16-zenburn.json"
       },
       {
+        "label": "base24-0x96f",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-0x96f.json"
+      },
+      {
         "label": "base24-3024-day",
         "uiTheme": "hc-light",
         "path": "./themes/base24/base24-3024-day.json"
@@ -1627,6 +1647,11 @@
         "label": "base24-cyberdyne",
         "uiTheme": "vs-dark",
         "path": "./themes/base24/base24-cyberdyne.json"
+      },
+      {
+        "label": "base24-dark-plus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-dark-plus.json"
       },
       {
         "label": "base24-dark",
@@ -1919,6 +1944,11 @@
         "path": "./themes/base24/base24-medailion.json"
       },
       {
+        "label": "base24-medallion",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-medallion.json"
+      },
+      {
         "label": "base24-mission-brogue",
         "uiTheme": "vs-dark",
         "path": "./themes/base24/base24-mission-brogue.json"
@@ -2144,6 +2174,16 @@
         "path": "./themes/base24/base24-solarized-dark-patched.json"
       },
       {
+        "label": "base24-space-gray-eighties-dull",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-space-gray-eighties-dull.json"
+      },
+      {
+        "label": "base24-space-gray-eighties",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-space-gray-eighties.json"
+      },
+      {
         "label": "base24-space-grey-eighties-dull",
         "uiTheme": "vs-dark",
         "path": "./themes/base24/base24-space-grey-eighties-dull.json"
@@ -2192,6 +2232,11 @@
         "label": "base24-terminal-basic",
         "uiTheme": "hc-light",
         "path": "./themes/base24/base24-terminal-basic.json"
+      },
+      {
+        "label": "base24-thayer-bright",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24/base24-thayer-bright.json"
       },
       {
         "label": "base24-thayler-bright",
