@@ -2,6 +2,11 @@
 
 All notable changes to the "base16-tinted-themes" VSCode extension will be documented in this file.
 
+
+## 0.25.1
+
+- Fix error in readme having it refer to an incorrectly named plugin
+
 ## 0.1.1
 - Fix `repository` `package.json` url
 
