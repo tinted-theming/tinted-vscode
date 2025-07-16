@@ -14,7 +14,7 @@ const packagePath = path.join(basePath, 'package.json');
 async function addMinorPackagejsonVersionBump() {
   const packageJson = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
   const packageJsonVersion = packageJson.version.split('.');
-  packageJson.version = `${packageJsonVersion[0]}.${Number(packageJsonVersion[1]) + 1}.${packageJsonVersion[2]}`;
+  packageJson.version = `${packageJsonVersion[0]}.${Number(packageJsonVersion[1]) + 1}.0`;
 
   fs.writeFileSync(packagePath, JSON.stringify(packageJson, null, 2), 'utf8');
 }
