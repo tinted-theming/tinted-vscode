@@ -1,0 +1,18 @@
+name: Publish extension
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@9a9194f87191a7e9055e3e9b95b8cfb13023bb08 # v4.1.7
+
+      - name: Publish to VSCode Marketplace
+        uses: lannonbr/vsce-action@510e61c5e9e6f33c0418ec5ff5fd36b1ced61e85 # v4.0.0
+        with:
+          args: "publish -p $VSCE_TOKEN"
+        env:
+          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
