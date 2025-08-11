@@ -53,3 +53,6 @@ jobs:
     needs: run
     if: needs.run.outputs.changes_detected == 'true'
     uses: ./.github/workflows/publish.yml
+    secrets:
+      OPEN_VSX_REGISTRY_TOKEN: ${{ secrets.OPEN_VSX_REGISTRY_TOKEN }}
+      VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}

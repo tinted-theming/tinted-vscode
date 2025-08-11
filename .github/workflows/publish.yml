@@ -1,6 +1,13 @@
 name: Publish extension
 on:
   workflow_call:
+    secrets:
+      OPEN_VSX_REGISTRY_TOKEN:
+        description: Open VSX token
+        required: true
+      VSCE_TOKEN:
+        description: VSCE token
+        required: true
   workflow_dispatch:
 
 jobs:
