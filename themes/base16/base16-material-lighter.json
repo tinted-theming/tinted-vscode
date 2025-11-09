@@ -38,10 +38,10 @@
 
         // Button control
         "button.background": "#6182b8", //D
-        "button.foreground": "#ffffff", //7
+        "button.foreground": "#000000", //7
         // "button.border": "#ff0000",
         "button.hoverBackground": "#8796b0", //4
-        "button.secondaryForeground": "#ffffff", //7
+        "button.secondaryForeground": "#000000", //7
         "button.secondaryBackground": "#7c4dff", //E
         "button.secondaryHoverBackground": "#8796b0", //4
         "checkbox.background": "#fafafa", //0
@@ -88,10 +88,10 @@
         // Lists and trees
         "list.activeSelectionBackground": "#cceae7", //2
         "list.activeSelectionForeground": "#80cbc4", //5
-        "list.dropBackground": "#ffffff", //7
+        "list.dropBackground": "#000000", //7
         "list.focusBackground": "#cceae7", //2
         "list.focusForeground": "#80cbc4", //5
-        "list.highlightForeground": "#ffffff", //7
+        "list.highlightForeground": "#000000", //7
         "list.hoverBackground": "#ccd7da", //3
         "list.hoverForeground": "#80cbc4", //5
         "list.inactiveSelectionBackground": "#cceae7", //2
@@ -111,14 +111,14 @@
         // Activity Bar
         "activityBar.background": "#fafafa", //0
         // Below is no longer supported as of 1.52
-        "activityBar.dropBackground": "#ffffff", //7
+        "activityBar.dropBackground": "#000000", //7
         // Above is no longer supported as of 1.52
         // "activityBar.dropBorder": "#ff0000",
         "activityBar.foreground": "#80cbc4", //5
         "activityBar.inactiveForeground": "#ccd7da", //3
         // "activityBar.border": "#f00", //0
         "activityBarBadge.background": "#6182b8", //D
-        "activityBarBadge.foreground": "#ffffff", //7
+        "activityBarBadge.foreground": "#000000", //7
         // "activityBar.activeBorder": "#f00",
         "activityBar.activeBackground": "#cceae7", //2
         // "activityBar.activeFocusBorder": "#ff0000",
@@ -160,7 +160,7 @@
         // "editorGroupHeader.border": "#ff0000",
         "editorGroup.emptyBackground": "#fafafa", //0
         // "editorGroup.focusedEmptyBorder": "#f00"
-        "editorGroup.dropIntoPromptForeground": "#80cbc4", //5
+        "editorGroup.dropIntoPromptForeground": "#43a39a", //5
         "editorGroup.dropIntoPromptBackground": "#fafafa", //0
         // "editorGroup.dropIntoPromptBorder": "#ff0000",
         "tab.activeBackground": "#fafafa", //0
@@ -273,7 +273,7 @@
         "editorOverviewRuler.findMatchForeground": "#ffb62c6f", //A
         "editorOverviewRuler.rangeHighlightForeground": "#ccd7da6f", //3
         "editorOverviewRuler.selectionHighlightForeground": "#cceae76f", //2
-        "editorOverviewRuler.wordHighlightForeground": "#ffffff6f", //7
+        "editorOverviewRuler.wordHighlightForeground": "#0000006f", //7
         "editorOverviewRuler.wordHighlightStrongForeground": "#6182b86f", //D
         "editorOverviewRuler.modifiedForeground": "#7c4dff", //E
         "editorOverviewRuler.addedForeground": "#91b859", //B
@@ -281,7 +281,7 @@
         "editorOverviewRuler.errorForeground": "#ff5370", //8
         "editorOverviewRuler.warningForeground": "#ffb62c", //A
         "editorOverviewRuler.infoForeground": "#39adb5", //C
-        "editorOverviewRuler.bracketMatchForeground": "#80cbc4", //6
+        "editorOverviewRuler.bracketMatchForeground": "#43a39a", //6
         /// Errors and warnings
         "editorError.foreground": "#ff5370", //8
         // "editorError.background": "#ff53706f", //8
@@ -336,10 +336,10 @@
         "editorSuggestWidget.background": "#e7eaec", //1
         // "editorSuggestWidget.border": "#f00",
         "editorSuggestWidget.foreground": "#80cbc4", //5
-        "editorSuggestWidget.focusHighlightForeground": "#ffffff", //7
+        "editorSuggestWidget.focusHighlightForeground": "#000000", //7
         "editorSuggestWidget.highlightForeground": "#6182b8", //D
         "editorSuggestWidget.selectedBackground": "#cceae7", //2
-        "editorSuggestWidget.selectedForeground": "#80cbc4", //6
+        "editorSuggestWidget.selectedForeground": "#43a39a", //6
         // "editorSuggestWidget.selectedIconForeground": "#ff0000",
         // "editorSuggestWidgetStatus.foreground": "#ff0000",
         "editorHoverWidget.foreground": "#80cbc4", //5
@@ -414,25 +414,25 @@
 
         // Status Bar colors
         "statusBar.background": "#6182b8", //D
-        "statusBar.foreground": "#ffffff", //7
+        "statusBar.foreground": "#000000", //7
         // "statusBar.border": "#f00",
         "statusBar.debuggingBackground": "#f76d47", //9
-        "statusBar.debuggingForeground": "#ffffff", //7
+        "statusBar.debuggingForeground": "#000000", //7
         // "statusBar.debuggingBorder": "",
         "statusBar.noFolderBackground": "#7c4dff", //E
-        "statusBar.noFolderForeground": "#ffffff", //7
+        "statusBar.noFolderForeground": "#000000", //7
         // "statusBar.noFolderBorder": "",
         "statusBarItem.activeBackground": "#ccd7da", //3
         "statusBarItem.hoverBackground": "#cceae7", //2
-        "statusBarItem.prominentForeground": "#ffffff", //7
+        "statusBarItem.prominentForeground": "#000000", //7
         "statusBarItem.prominentBackground": "#7c4dff", //E
         "statusBarItem.prominentHoverBackground": "#ff5370", //8
         "statusBarItem.remoteBackground": "#91b859", //B
-        "statusBarItem.remoteForeground": "#ffffff", //7
+        "statusBarItem.remoteForeground": "#000000", //7
         "statusBarItem.errorBackground": "#ff5370", //8
-        "statusBarItem.errorForeground": "#ffffff", //7
+        "statusBarItem.errorForeground": "#000000", //7
         "statusBarItem.warningBackground": "#ffb62c", //A
-        "statusBarItem.warningForeground": "#ffffff", //7
+        "statusBarItem.warningForeground": "#000000", //7
         // "statusBarItem.compactHoverBackground": "#ff0000",
         // "statusBarItem.focusBorder": "#ff0000",
         // "statusBarItem.settingsProfilesForeground": "#ff0000",
@@ -455,12 +455,12 @@
         "menu.selectionForeground": "#80cbc4", //5
         "menu.selectionBackground": "#cceae7", //2
         // "menu.selectionBorder": "#f00",
-        "menu.separatorBackground": "#ffffff", //7
+        "menu.separatorBackground": "#000000", //7
         // "menu.border": "#f00",
 
         // Command Center colors
         "commandCenter.foreground": "#80cbc4", //5
-        "commandCenter.activeForeground": "#ffffff", //7
+        "commandCenter.activeForeground": "#000000", //7
         "commandCenter.background": "#fafafa", //0
         "commandCenter.activeBackground": "#e7eaec", //1
         // "commandCenter.border": "#ff0000",
@@ -483,13 +483,13 @@
         "notification.foreground": "#80cbc4", //5
         "notification.buttonBackground": "#6182b8", //D
         "notification.buttonHoverBackground": "#cceae7", //2
-        "notification.buttonForeground": "#ffffff", //7
+        "notification.buttonForeground": "#000000", //7
         "notification.infoBackground": "#39adb5", //C
-        "notification.infoForeground": "#ffffff", //7
+        "notification.infoForeground": "#000000", //7
         "notification.warningBackground": "#ffb62c", //A
-        "notification.warningForeground": "#ffffff", //7
+        "notification.warningForeground": "#000000", //7
         "notification.errorBackground": "#ff5370", //8
-        "notification.errorForeground": "#ffffff", //7
+        "notification.errorForeground": "#000000", //7
         // Above is no longer supported as of 1.21
 
         // Banner colors
@@ -499,10 +499,10 @@
 
         // Extensions colors
         "extensionButton.prominentBackground": "#91b859", //B
-        "extensionButton.prominentForeground": "#ffffff", //7
+        "extensionButton.prominentForeground": "#000000", //7
         "extensionButton.prominentHoverBackground": "#cceae7", //2
         "extensionBadge.remoteBackground": "#f76d47", //9
-        "extensionBadge.remoteForeground": "#ffffff", //7
+        "extensionBadge.remoteForeground": "#000000", //7
         "extensionIcon.starForeground": "#ffb62c", //A
         "extensionIcon.verifiedForeground": "#6182b8", //D
         "extensionIcon.preReleaseForeground": "#f76d47", //9
@@ -514,8 +514,8 @@
         "quickInput.background": "#e7eaec", //1
         "quickInput.foreground": "#80cbc4", //5
         "quickInputList.focusBackground": "#ccd7da", //3
-        "quickInputList.focusForeground": "#ffffff", //7
-        "quickInputList.focusIconForeground": "#ffffff", //7
+        "quickInputList.focusForeground": "#000000", //7
+        "quickInputList.focusIconForeground": "#000000", //7
         // "quickInputTitle.background": "#ff0000",
 
         // Keybinding label colors
@@ -547,7 +547,7 @@
         "terminal.ansiBrightBlue": "#6182b8", //D
         "terminal.ansiBrightMagenta": "#7c4dff", //E
         "terminal.ansiBrightCyan": "#39adb5", //C
-        "terminal.ansiBrightWhite": "#ffffff", //7
+        "terminal.ansiBrightWhite": "#000000", //7
         // "terminal.selectionBackground": "#f0f",
         // "terminal.selectionForeground": "#ff0000",
         // "terminal.findMatchBackground": "#ff0000",
@@ -570,7 +570,7 @@
         // "editor.inlineValuesBackground": "#ff0000",
         // "debugView.exceptionLabelForeground": "#ff0000",
         // "debugView.exceptionLabelBackground": "#ff0000",
-        "debugView.stateLabelForeground": "#ffffff", //7
+        "debugView.stateLabelForeground": "#000000", //7
         "debugView.stateLabelBackground": "#6182b8", //D
         "debugView.valueChangedHighlight": "#6182b8", //D
         "debugTokenExpression.name": "#7c4dff", //E
@@ -651,8 +651,8 @@
         // Breadcrumbs colors
         "breadcrumb.foreground": "#80cbc4", //5
         "breadcrumb.background": "#e7eaec", //1
-        "breadcrumb.focusForeground": "#80cbc4", //6
-        "breadcrumb.activeSelectionForeground": "#ffffff", //7
+        "breadcrumb.focusForeground": "#43a39a", //6
+        "breadcrumb.activeSelectionForeground": "#000000", //7
         "breadcrumbPicker.background": "#e7eaec", //1
 
         // Snippets colors
