@@ -42,6 +42,7 @@ async function main() {
   await removeThemesfromPackageJson("base16");
   await addThemesToPackageJson("base16");
   await addThemesToPackageJson("base24");
+  await addThemesToPackageJson("tinted8");
 }
 
 main();
