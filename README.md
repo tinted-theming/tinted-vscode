@@ -1,9 +1,9 @@
 # Tinted VSCode
 
-This [VSCode extension] (also on [Open VSX Registry]) adds all [Base16] and
-[Base24] themes to your VSCode theme list. You can have a look at the [Tinted
-Gallery] to preview the available themes. Look at [Tinted Theming] for more
-information.
+This [VSCode extension] (also on [Open VSX Registry]) adds all [Base16],
+[Base24] and [Tinted8] themes to your VSCode theme list. You can have a look at
+the [Tinted Gallery] to preview the available themes. Look at [Tinted Theming]
+for more information.
 
 ## Installation
 
@@ -24,3 +24,4 @@ information.
 [Tinted Theming]: https://github.com/tinted-theming/home
 [Base16]: https://github.com/tinted-theming/home/blob/main/styling.md
 [Base24]: https://github.com/tinted-theming/base24
+[Tinted8]: https://github.com/tinted-theming/home/blob/main/specs/tinted8/styling.md

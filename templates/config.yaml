@@ -1,8 +1,14 @@
 base16:
-  extension: .json
-  output: themes/base16
+  filename: themes/{{ scheme-system }}/{{ scheme-system }}-{{ scheme-slug }}.json
+  supported-systems: [base16]
 
 base24:
-  extension: .json
-  output: themes/base24
+  filename: themes/{{ scheme-system }}/{{ scheme-system }}-{{ scheme-slug }}.json
   supported-systems: [base24]
+
+tinted8:
+  filename: themes/{{ scheme.system }}/{{ scheme.system }}-{{ scheme.slug }}.json
+  supported-systems: [tinted8]
+  supports:
+    tinted8-builder: "~0.2.0"
+    tinted8-styling: "~0.2.0"
